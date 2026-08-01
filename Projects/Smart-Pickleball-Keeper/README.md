@@ -1,32 +1,32 @@
 # 🏓 Smart Pickleball Keeper
 
-> **IRIS** is an automated ball containment and monitoring system designed to securely manage borrowed and returned pickleballs. The system integrates an ESP32-CAM for user image capture and a motor-driven mechanism for controlled ball dispensing, providing a reliable and user-friendly solution for sports facilities and training environments.
+> **IRIS (Intelligent Retrieval & Inventory System)** is an automated ball containment and monitoring system designed to securely manage borrowed and returned pickleballs. The system integrates an ESP32-CAM for user image capture and a motor-driven dispensing mechanism to provide a reliable, secure, and user-friendly solution for sports facilities and training environments.
 
 ---
 
-## Project Overview
+# Project Overview
 
 The Smart Pickleball Keeper combines mechanical design, electronics integration, and Design for Manufacturing (DFM) principles to create a production-ready automated ball management system.
 
-The design emphasizes reliability, ease of assembly, controlled ball handling, and protection of electronic components while maintaining a clean, compact form factor.
+The design focuses on reliability, ease of assembly, controlled ball dispensing, protection of electronic components, and a compact form factor suitable for public and recreational facilities.
 
 ---
 
-## Cover Render
+# Cover Render
 
 <p align="center">
-<img src="front-view.png" width="450">
+<img src="Images/RENDERED IMAGE 1.png" width="450">
 </p>
 
 ---
 
-## Software
+# Software
 
 - SolidWorks
 
 ---
 
-## Major Components
+# Major Components
 
 - Sheet Metal Components
 - Plastic Components
@@ -37,58 +37,72 @@ The design emphasizes reliability, ease of assembly, controlled ball handling, a
 
 ---
 
-## Engineering Contributions
+# Engineering Contributions
 
-- Designed the **IRIS** iris-style mechanism, defining the maximum operating range and developing the cam profile for smooth and synchronized opening and closing.
-- Engineered the ball exit door hinge mechanism to provide controlled, low-friction motion and long service life.
-- Developed an extendable linkage system to securely position the adjustable camera for optimal image capture.
-- Designed a protective enclosure for the ESP32-CAM and electronic control board, ensuring structural support, accessibility, and protection.
+- Designed the **IRIS** mechanism, defining its maximum operating range and developing the cam profile for smooth, synchronized opening and closing.
+- Engineered the ball exit door hinge mechanism to provide controlled, low-friction actuation and long service life.
+- Developed an extendable linkage system to securely position the adjustable camera mount for optimal image capture.
+- Designed the protective housing for the ESP32-CAM and electronic control board, ensuring structural support, accessibility, and protection.
 - Integrated internal cable routing features to improve wire management, reduce cable strain, and simplify assembly.
 - Applied Design for Manufacturing (DFM) principles to improve manufacturability and reduce assembly complexity.
 
 ---
 
-## Key Features
+# Key Features
 
 - Automated ball containment
-- Controlled ball dispensing
-- Integrated ESP32-CAM image capture
-- Adjustable camera mount
+- Controlled ball dispensing mechanism
+- Integrated ESP32-CAM user image capture
+- Adjustable camera mounting system
 - Internal cable management
 - Compact mechanical assembly
 - Production-oriented design
 
 ---
 
-## Gallery
+# Gallery
 
-### Front View
+## Rendered Image 1
 
 <p align="center">
-<img src="front-view.png" width="500">
+<img src="Images/RENDERED IMAGE 1.png" width="700">
 </p>
 
-### Isometric View
+## Rendered Image 2
 
 <p align="center">
-<img src="isometric-view.png" width="500">
+<img src="Images/RENDERED IMAGE 2.png" width="700">
 </p>
 
-### Side View
+## Rendered Image 3
 
 <p align="center">
-<img src="side-view.png" width="500">
+<img src="Images/RENDERED IMAGE 3.png" width="700">
 </p>
 
-### Rear View
+## Rendered Image 4
 
 <p align="center">
-<img src="rear-view.png" width="500">
+<img src="Images/RENDERED IMAGE 4.png" width="700">
 </p>
 
 ---
 
-## Skills Demonstrated
+# 🎥 Video Demonstration
+
+Click the image below to watch the Smart Pickleball Keeper in action.
+
+<p align="center">
+<a href="Videos/Video Demo.mp4">
+    <img src="Images/RENDERED IMAGE 1.png" width="700">
+</a>
+</p>
+
+➡️ **Direct Link:** [Watch the Video Demonstration](Videos/Video%20Demo.mp4)
+
+---
+
+# Skills Demonstrated
 
 - Product Design
 - Mechanical Design
@@ -99,11 +113,12 @@ The design emphasizes reliability, ease of assembly, controlled ball handling, a
 - CAD Modeling
 - Engineering Drawings
 - Electronics Integration
+- Cable Management
 - Design Optimization
 
 ---
 
-## Future Improvements
+# Future Improvements
 
 - Improve enclosure accessibility for maintenance.
 - Reduce overall part count to simplify assembly.
