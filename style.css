@@ -641,13 +641,26 @@ nav a:hover{
 
 .contact-info strong{
 
-    display:block;
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
 
     margin-bottom:10px;
 
     color:#0b1f3a;
 
     font-size:18px;
+
+}
+
+
+.contact-info i{
+
+    font-size:22px;
+
+}
 
 }
 
