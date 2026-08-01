@@ -100,6 +100,29 @@ Click the image below to watch the Smart Pickleball Keeper in action.
 
 ➡️ **Direct Link:** [Watch the Video Demonstration](Video%20Demo.mp4)
 
+
+---
+
+# 🧪 3D Printed Prototype Testing
+
+A functional 3D-printed prototype was developed to validate the mechanical design, assembly, and overall performance of the Smart Pickleball Keeper before production. The prototype was used to evaluate the mechanism's functionality, ball dispensing operation, and integration of the major mechanical components.
+
+### Validation Objectives
+
+- Verify smooth operation of the IRIS mechanism.
+- Validate controlled ball dispensing.
+- Evaluate the hinge and linkage mechanisms.
+- Verify overall assembly and fit of components.
+- Identify design improvements before manufacturing.
+
+### Prototype Testing Demo
+
+🎥 **Watch the 3D Printed Prototype Testing Demo**
+
+➡️ [Testing Demo](Testing%20Demo.mp4)
+
+*The demonstration showcases the functional 3D-printed prototype, validating the mechanical design, motion of the IRIS mechanism, and overall system operation.*****
+
 ---
 
 # Skills Demonstrated
