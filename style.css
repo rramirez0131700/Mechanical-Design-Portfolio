@@ -1,7 +1,7 @@
-/* ==========================================
-   Rafael Ramirez Portfolio
+/* ===========================================
+   Rafael Ramirez Mechanical Design Portfolio
    style.css
-========================================== */
+=========================================== */
 
 *{
     margin:0;
@@ -16,58 +16,73 @@ html{
 body{
 
     font-family:'Inter',sans-serif;
-    background:#f5f7fa;
-    color:#222;
+
+    background:#f4f6f8;
+
+    color:#333;
+
     line-height:1.7;
 
 }
 
+/* ---------- Layout ---------- */
+
 .container{
 
     width:90%;
+
     max-width:1200px;
+
     margin:auto;
 
 }
 
-/* =======================
-   HEADER
-======================= */
+/* ---------- Header ---------- */
 
 header{
 
     position:fixed;
-    width:100%;
+
     top:0;
 
+    width:100%;
+
     background:#ffffff;
+
     border-bottom:1px solid #e5e5e5;
 
-    z-index:999;
+    z-index:1000;
 
 }
 
 header .container{
 
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
-    padding:20px 0;
+    padding:18px 0;
 
 }
 
 .logo{
 
-    font-size:24px;
+    text-decoration:none;
+
+    font-size:26px;
+
     font-weight:700;
-    color:#0d47a1;
+
+    color:#0f4c81;
 
 }
 
 nav{
 
     display:flex;
+
     gap:35px;
 
 }
@@ -75,52 +90,50 @@ nav{
 nav a{
 
     text-decoration:none;
-    color:#444;
+
+    color:#555;
+
     font-weight:500;
+
     transition:.3s;
 
 }
 
 nav a:hover{
 
-    color:#1565c0;
+    color:#0f4c81;
 
 }
 
-/* =======================
-   HERO
-======================= */
+/* ---------- Hero ---------- */
 
 .hero{
-
-    background:linear-gradient(135deg,#0d47a1,#1976d2);
-
-    color:white;
 
     min-height:100vh;
 
     display:flex;
-    justify-content:center;
+
     align-items:center;
+
+    background:linear-gradient(135deg,#0f4c81,#1976d2);
+
+    color:white;
+
     text-align:center;
 
-    padding:120px 20px;
+}
+
+.hero-content{
+
+    padding-top:80px;
 
 }
 
 .hero h1{
 
-    font-size:58px;
-    margin-bottom:20px;
+    font-size:62px;
 
-}
-
-.hero h2{
-
-    font-size:28px;
-    font-weight:400;
-
-    margin-bottom:30px;
+    margin-bottom:25px;
 
 }
 
@@ -130,73 +143,111 @@ nav a:hover{
 
     margin:auto;
 
-    font-size:20px;
-
-    opacity:.95;
+    font-size:22px;
 
 }
 
-.button{
-
-    display:inline-block;
+.hero-buttons{
 
     margin-top:45px;
+
+}
+
+/* ---------- Buttons ---------- */
+
+.btn-primary{
+
+    display:inline-block;
 
     background:white;
 
     color:#1565c0;
 
-    padding:16px 38px;
+    text-decoration:none;
+
+    padding:15px 35px;
 
     border-radius:40px;
 
-    text-decoration:none;
-
     font-weight:600;
+
+    margin:10px;
 
     transition:.3s;
 
 }
 
-.button:hover{
+.btn-primary:hover{
 
-    transform:translateY(-3px);
-
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    transform:translateY(-4px);
 
 }
 
-/* =======================
-   SECTIONS
-======================= */
+.btn-secondary{
+
+    display:inline-block;
+
+    border:2px solid white;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    margin:10px;
+
+    transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+    background:white;
+
+    color:#1565c0;
+
+}
+
+/* ---------- Sections ---------- */
 
 section{
 
-    padding:100px 0;
+    padding:110px 0;
 
 }
 
 section h2{
 
-    text-align:center;
+    font-size:42px;
 
-    font-size:40px;
+    text-align:center;
 
     margin-bottom:50px;
 
-    color:#0d47a1;
+    color:#0f4c81;
 
 }
 
-/* =======================
-   PROJECTS
-======================= */
+section p{
 
-.project-grid{
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+/* ---------- Project Cards ---------- */
+
+.projects-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
 
     gap:35px;
 
@@ -218,7 +269,7 @@ section h2{
 
 .project-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 
 }
 
@@ -228,127 +279,123 @@ section h2{
 
     display:block;
 
+    aspect-ratio:16/10;
+
+    object-fit:cover;
+
 }
 
-.project-card h3{
+.project-content{
 
-    padding:25px 25px 10px;
+    padding:30px;
+
+}
+
+.project-content h3{
+
+    margin-bottom:15px;
 
     color:#1565c0;
 
 }
 
-.project-card p{
+.project-content p{
 
-    padding:0 25px 20px;
+    margin-bottom:25px;
 
 }
 
-.project-card a{
-
-    display:inline-block;
-
-    margin:0 25px 30px;
-
-    color:#1565c0;
-
-    font-weight:600;
+.project-content a{
 
     text-decoration:none;
 
-}
+    color:#1565c0;
 
-.project-card a:hover{
-
-    text-decoration:underline;
+    font-weight:700;
 
 }
 
-.coming-soon{
+/* ---------- Future Projects ---------- */
+
+.future{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.future-label{
 
     background:#eceff1;
 
-    text-align:center;
-
     padding:80px;
+
+    text-align:center;
 
     font-size:24px;
 
     font-weight:700;
 
-    color:#666;
+    color:#777;
 
 }
 
-/* =======================
-   SKILLS
-======================= */
+/* ---------- Skills ---------- */
 
-.skills{
+.skills-grid{
 
-    display:flex;
+    display:grid;
 
-    flex-wrap:wrap;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 
-    justify-content:center;
-
-    gap:15px;
+    gap:18px;
 
 }
 
-.skills span{
+.skills-grid div{
 
-    background:#1565c0;
+    background:white;
 
-    color:white;
+    padding:18px;
 
-    padding:12px 22px;
-
-    border-radius:30px;
-
-    font-size:15px;
-
-}
-
-/* =======================
-   CONTACT
-======================= */
-
-#contact{
+    border-radius:10px;
 
     text-align:center;
 
-}
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
 
-#contact p{
-
-    max-width:800px;
-
-    margin:auto;
+    font-weight:500;
 
 }
 
-/* =======================
-   FOOTER
-======================= */
+/* ---------- Contact ---------- */
+
+.contact-buttons{
+
+    text-align:center;
+
+    margin-top:40px;
+
+}
+
+/* ---------- Footer ---------- */
 
 footer{
 
-    background:#0d47a1;
+    background:#0f4c81;
 
     color:white;
 
     text-align:center;
 
-    padding:30px;
-
-    margin-top:80px;
+    padding:35px;
 
 }
 
-/* =======================
-   MOBILE
-======================= */
+/* ---------- Responsive ---------- */
 
 @media(max-width:900px){
 
@@ -374,12 +421,6 @@ nav{
 
 }
 
-.hero h2{
-
-    font-size:24px;
-
-}
-
 .hero p{
 
     font-size:18px;
@@ -388,8 +429,70 @@ nav{
 
 section h2{
 
-    font-size:32px;
+    font-size:34px;
 
 }
+
+}
+
+/* ---------- Scroll Animation ---------- */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ---------- Scroll to Top ---------- */
+
+#topButton{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#1565c0;
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.3s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+#topButton:hover{
+
+    transform:scale(1.1);
 
 }
