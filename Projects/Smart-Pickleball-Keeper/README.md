@@ -15,7 +15,7 @@ The design focuses on reliability, ease of assembly, controlled ball dispensing,
 # Cover Render
 
 <p align="center">
-<img src="Images/RENDERED IMAGE 1.png" width="450">
+<img src="./Images/RENDERED%20IMAGE%201.jpg" width="450">
 </p>
 
 ---
@@ -65,25 +65,25 @@ The design focuses on reliability, ease of assembly, controlled ball dispensing,
 ## Rendered Image 1
 
 <p align="center">
-<img src="Images/RENDERED IMAGE 1.png" width="700">
+<img src="./Images/RENDERED%20IMAGE%201.jpg" width="700">
 </p>
 
 ## Rendered Image 2
 
 <p align="center">
-<img src="Images/RENDERED IMAGE 2.png" width="700">
+<img src="./Images/RENDERED%20IMAGE%202.jpg" width="700">
 </p>
 
 ## Rendered Image 3
 
 <p align="center">
-<img src="Images/RENDERED IMAGE 3.png" width="700">
+<img src="./Images/RENDERED%20IMAGE%203.jpg" width="700">
 </p>
 
 ## Rendered Image 4
 
 <p align="center">
-<img src="Images/RENDERED IMAGE 4.png" width="700">
+<img src="./Images/RENDERED%20IMAGE%204.jpg" width="700">
 </p>
 
 ---
@@ -93,12 +93,12 @@ The design focuses on reliability, ease of assembly, controlled ball dispensing,
 Click the image below to watch the Smart Pickleball Keeper in action.
 
 <p align="center">
-<a href="Videos/Video Demo.mp4">
-    <img src="Images/RENDERED IMAGE 1.png" width="700">
+<a href="./Videos/Video%20Demo.mp4">
+    <img src="./Images/RENDERED%20IMAGE%201.jpg" width="700">
 </a>
 </p>
 
-➡️ **Direct Link:** [Watch the Video Demonstration](Videos/Video%20Demo.mp4)
+➡️ **Direct Link:** [Watch the Video Demonstration](./Videos/Video%20Demo.mp4)
 
 ---
 
