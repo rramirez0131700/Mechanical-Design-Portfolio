@@ -103,7 +103,7 @@ Click the image below to watch the Smart Pickleball Keeper in action.
 
 ---
 
-# 🧪 3D Printed Prototype Testing
+# 3D Printed Prototype Testing
 
 A functional 3D-printed prototype was developed to validate the mechanical design, assembly, and overall performance of the Smart Pickleball Keeper before production. The prototype was used to evaluate the mechanism's functionality, ball dispensing operation, and integration of the major mechanical components.
 
