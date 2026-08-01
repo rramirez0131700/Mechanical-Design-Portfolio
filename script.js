@@ -1,17 +1,19 @@
 /* ==========================================
-   Rafael Ramirez Portfolio
+   Rafael Ramirez Mechanical Design Portfolio
    script.js
 ========================================== */
 
 // ==========================================
-// Smooth fade-in animation
+// Fade-in animation
 // ==========================================
+
+const sections = document.querySelectorAll("section");
 
 const observer = new IntersectionObserver((entries) => {
 
     entries.forEach(entry => {
 
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
 
             entry.target.classList.add("show");
 
@@ -19,11 +21,13 @@ const observer = new IntersectionObserver((entries) => {
 
     });
 
-},{
+}, {
+
     threshold:0.15
+
 });
 
-document.querySelectorAll("section").forEach((section)=>{
+sections.forEach(section => {
 
     section.classList.add("hidden");
 
@@ -31,15 +35,16 @@ document.querySelectorAll("section").forEach((section)=>{
 
 });
 
+
 // ==========================================
-// Header shadow while scrolling
+// Sticky Header Shadow
 // ==========================================
 
-window.addEventListener("scroll",()=>{
+const header = document.querySelector("header");
 
-    const header=document.querySelector("header");
+window.addEventListener("scroll", () => {
 
-    if(window.scrollY>40){
+    if(window.scrollY > 30){
 
         header.style.boxShadow="0 10px 25px rgba(0,0,0,.08)";
 
@@ -53,12 +58,12 @@ window.addEventListener("scroll",()=>{
 
 });
 
+
 // ==========================================
-// Highlight active navigation link
+// Active Navigation
 // ==========================================
 
-const sections=document.querySelectorAll("section");
-const navLinks=document.querySelectorAll("nav a");
+const navLinks = document.querySelectorAll("nav a");
 
 window.addEventListener("scroll",()=>{
 
@@ -66,11 +71,11 @@ window.addEventListener("scroll",()=>{
 
     sections.forEach(section=>{
 
-        const sectionTop=section.offsetTop-120;
+        const sectionTop = section.offsetTop - 120;
 
-        if(window.pageYOffset>=sectionTop){
+        if(window.pageYOffset >= sectionTop){
 
-            current=section.getAttribute("id");
+            current = section.getAttribute("id");
 
         }
 
@@ -90,44 +95,24 @@ window.addEventListener("scroll",()=>{
 
 });
 
-// ==========================================
-// Project card hover animation
-// ==========================================
-
-document.querySelectorAll(".project-card").forEach(card=>{
-
-    card.addEventListener("mouseenter",()=>{
-
-        card.style.transform="translateY(-10px) scale(1.02)";
-
-    });
-
-    card.addEventListener("mouseleave",()=>{
-
-        card.style.transform="translateY(0px) scale(1)";
-
-    });
-
-});
 
 // ==========================================
-// Scroll to top button
+// Scroll To Top Button
 // ==========================================
 
-const topButton=document.createElement("button");
-
-topButton.innerHTML="↑";
+const topButton = document.createElement("button");
 
 topButton.id="topButton";
+
+topButton.innerHTML="↑";
 
 document.body.appendChild(topButton);
 
 window.addEventListener("scroll",()=>{
 
-    if(window.scrollY>500){
+    if(window.scrollY > 500){
 
         topButton.style.opacity="1";
-
         topButton.style.pointerEvents="auto";
 
     }
@@ -135,7 +120,6 @@ window.addEventListener("scroll",()=>{
     else{
 
         topButton.style.opacity="0";
-
         topButton.style.pointerEvents="none";
 
     }
@@ -153,3 +137,99 @@ topButton.addEventListener("click",()=>{
     });
 
 });
+
+
+// ==========================================
+// Smooth Hover Animation
+// ==========================================
+
+document.querySelectorAll(".project-card").forEach(card=>{
+
+    card.addEventListener("mouseenter",()=>{
+
+        card.style.transform="translateY(-10px)";
+
+    });
+
+    card.addEventListener("mouseleave",()=>{
+
+        card.style.transform="translateY(0px)";
+
+    });
+
+});
+
+
+// ==========================================
+// Project Card Click Animation
+// ==========================================
+
+document.querySelectorAll(".project-card").forEach(card=>{
+
+    card.addEventListener("mousedown",()=>{
+
+        card.style.transform="scale(.98)";
+
+    });
+
+    card.addEventListener("mouseup",()=>{
+
+        card.style.transform="scale(1)";
+
+    });
+
+});
+
+
+// ==========================================
+// Current Year in Footer
+// ==========================================
+
+const footer = document.querySelector("footer p");
+
+if(footer){
+
+    footer.innerHTML = footer.innerHTML.replace("2026", new Date().getFullYear());
+
+}
+
+
+// ==========================================
+// Image Lightbox (Future Ready)
+// ==========================================
+
+const images = document.querySelectorAll(".gallery img");
+
+if(images.length){
+
+    const overlay = document.createElement("div");
+
+    overlay.id = "lightbox";
+
+    overlay.innerHTML = "<img>";
+
+    document.body.appendChild(overlay);
+
+    const lightboxImage = overlay.querySelector("img");
+
+    images.forEach(image=>{
+
+        image.addEventListener("click",()=>{
+
+            overlay.style.display="flex";
+
+            lightboxImage.src=image.src;
+
+        });
+
+    });
+
+    overlay.addEventListener("click",()=>{
+
+        overlay.style.display="none";
+
+    });
+
+}
+
+console.log("Mechanical Design Portfolio Loaded Successfully");
