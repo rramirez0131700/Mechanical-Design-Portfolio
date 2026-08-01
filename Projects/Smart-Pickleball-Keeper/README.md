@@ -61,19 +61,19 @@ The design emphasizes reliability, ease of assembly, controlled ball dispensing,
 
 # Gallery
 
-## Rendered Image 1
+## Design Render 1
 
 <p align="center">
 <img src="RENDERED%20IMAGE%201.jpg" width="800">
 </p>
 
-## Rendered Image 2
+## Design Render 2
 
 <p align="center">
 <img src="RENDERED%20IMAGE%202.jpg" width="800">
 </p>
 
-## Rendered Image 3
+## Design Render 3
 
 <p align="center">
 <img src="RENDERED%20IMAGE%203.jpg" width="800">
