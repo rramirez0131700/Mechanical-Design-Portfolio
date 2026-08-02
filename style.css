@@ -399,49 +399,57 @@ nav a:hover{
 
 }
 
-.skills-grid{
+.skills-table{
 
-    display:block;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:50px;
     margin-top:40px;
 
 }
 
-.skill-category{
+.skills-column h3{
 
-    margin-bottom:45px;
-
-}
-
-.skill-category h3{
-
-    font-size:38px;
     color:#0b1f3a;
-    font-weight:700;
-    margin-bottom:18px;
+    font-size:24px;
+    margin-bottom:20px;
+    padding-bottom:10px;
+    border-bottom:3px solid #58a6ff;
 
 }
 
-.skill-category span{
+.skills-column ul{
 
-    display:inline-block;
-    background:#0b1f3a;
-    color:#fff;
-    padding:10px 20px;
-    margin:6px 6px 0 0;
-    border-radius:999px;
-    font-size:15px;
-    font-weight:500;
-    transition:.3s;
+    list-style:none;
+    padding:0;
+    margin:0;
 
 }
 
-.skill-category span:hover{
+.skills-column li{
 
-    background:#1f5fbf;
-    transform:translateY(-3px);
+    padding:10px 0;
+    border-bottom:1px solid #ececec;
+    color:#555;
+    font-size:16px;
 
 }
 
+.skills-column li:last-child{
+
+    border-bottom:none;
+
+}
+
+@media(max-width:992px){
+
+    .skills-table{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
 
 
 /* ==========================================
