@@ -424,6 +424,8 @@ nav a:hover::after{
 }
 
 
+/* PROJECT GRID */
+
 .project-grid{
 
     display:grid;
@@ -440,9 +442,7 @@ nav a:hover::after{
 
 
 
-/* ==========================================================
-   PROJECT CARD
-========================================================== */
+/* PROJECT CARD */
 
 .project-card{
 
@@ -475,9 +475,7 @@ nav a:hover::after{
 
 
 
-/* ==========================================================
-   PROJECT IMAGE
-========================================================== */
+/* PROJECT IMAGE */
 
 .project-card img{
 
@@ -487,22 +485,11 @@ nav a:hover::after{
 
     object-fit:cover;
 
-    transition:.35s ease;
-
-}
-
-
-.project-card:hover img{
-
-    transform:scale(1.05);
-
 }
 
 
 
-/* ==========================================================
-   PROJECT CONTENT
-========================================================== */
+/* PROJECT CONTENT */
 
 .project-content{
 
@@ -518,9 +505,7 @@ nav a:hover::after{
 
 
 
-/* ==========================================================
-   PROJECT TITLE ALIGNMENT
-========================================================== */
+/* TITLE ALIGNMENT */
 
 .project-content h3{
 
@@ -530,7 +515,7 @@ nav a:hover::after{
 
     line-height:1.3;
 
-    height:65px;
+    height:70px;
 
     display:flex;
 
@@ -542,9 +527,7 @@ nav a:hover::after{
 
 
 
-/* ==========================================================
-   PROJECT DESCRIPTION ALIGNMENT
-========================================================== */
+/* DESCRIPTION ALIGNMENT */
 
 .project-content p{
 
@@ -554,7 +537,9 @@ nav a:hover::after{
 
     line-height:1.6;
 
-    min-height:120px;
+    height:150px;
+
+    overflow:hidden;
 
     margin-bottom:25px;
 
@@ -562,9 +547,7 @@ nav a:hover::after{
 
 
 
-/* ==========================================================
-   VIEW PROJECT BUTTON ALIGNMENT
-========================================================== */
+/* BUTTON ALIGNMENT */
 
 .project-btn{
 
@@ -578,9 +561,7 @@ nav a:hover::after{
 
     justify-content:center;
 
-    gap:10px;
-
-    padding:12px 24px;
+    padding:12px 25px;
 
     background:#0b1f3a;
 
@@ -595,27 +576,9 @@ nav a:hover::after{
 }
 
 
-
 .project-btn:hover{
 
     background:#1f5fbf;
-
-    transform:translateX(5px);
-
-    box-shadow:0 10px 25px rgba(31,95,191,.35);
-
-}
-
-
-
-.project-btn i{
-
-    transition:.35s ease;
-
-}
-
-
-.project-btn:hover i{
 
     transform:translateX(5px);
 
