@@ -394,63 +394,68 @@ nav a:hover{
 ========================================== */
 
 #skills{
-
-    background:#ffffff;
-
+    background:#fff;
 }
 
 .skills-table{
-
     display:grid;
     grid-template-columns:repeat(3,minmax(0,1fr));
-    gap:50px;
-    margin-top:45px;
+    gap:55px;
+    margin-top:50px;
     align-items:start;
-
 }
 
 .skills-column{
-
     display:flex;
     flex-direction:column;
-    height:100%;
-
 }
 
+/* Make all headings occupy the same height */
 .skills-column h3{
-
     color:#0b1f3a;
     font-size:22px;
     font-weight:700;
-    margin-bottom:18px;
-    padding-bottom:12px;
-    border-bottom:3px solid #58a6ff;
     line-height:1.3;
 
+    display:flex;
+    align-items:flex-end;
+
+    min-height:72px;
+
+    margin:0;
+    padding-bottom:16px;
+
+    border-bottom:3px solid #58a6ff;
 }
 
 .skills-column ul{
-
     list-style:none;
-    margin:0;
+    margin:28px 0 0;
     padding:0;
-
 }
 
 .skills-column li{
-
-    padding:10px 0;
-    font-size:16px;
+    padding:11px 0;
+    font-size:17px;
     font-weight:500;
     color:#333;
     line-height:1.5;
-    border-bottom:1px solid #ececec;
 
+    /* Remove the row separators */
+    border:none;
 }
 
-.skills-column li:last-child{
+/* Tablet */
+@media (max-width:992px){
 
-    border-bottom:none;
+    .skills-table{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .skills-column h3{
+        min-height:auto;
+    }
 
 }
 
