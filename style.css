@@ -158,27 +158,41 @@ nav a:hover{
 .hero-text{
 
     order:2;
-    max-width:900px;
+    max-width:1100px;
 
 }
 
+.hero-text h1{
+
+    margin-bottom:10px;
+
+}
 
 .hero-text h2{
 
     color:white;
     font-size:52px;
-    line-height:1.2;
-    margin-bottom:20px;
+    line-height:1.15;
+    margin-bottom:18px;
 
 }
 
+.hero-text h3{
+
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:20px;
+    color:#ffffff;
+
+}
 
 .hero-text p{
 
     font-size:20px;
     color:#d7dce5;
-    max-width:800px;
-    margin:auto;
+    max-width:1000px;
+    margin:0 auto;
+    line-height:1.7;
 
 }
 
