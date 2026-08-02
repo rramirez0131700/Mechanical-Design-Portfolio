@@ -403,8 +403,15 @@ nav a:hover{
 
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:50px;
+    gap:40px;
     margin-top:40px;
+
+}
+
+.skills-column{
+
+    display:flex;
+    flex-direction:column;
 
 }
 
@@ -415,6 +422,7 @@ nav a:hover{
     margin-bottom:20px;
     padding-bottom:10px;
     border-bottom:3px solid #58a6ff;
+    min-height:70px;
 
 }
 
@@ -428,10 +436,12 @@ nav a:hover{
 
 .skills-column li{
 
-    padding:10px 0;
+    padding:12px 0;
     border-bottom:1px solid #ececec;
-    color:#555;
+    color:#333;
     font-size:16px;
+    font-weight:500;
+    line-height:1.5;
 
 }
 
@@ -440,17 +450,6 @@ nav a:hover{
     border-bottom:none;
 
 }
-
-@media(max-width:992px){
-
-    .skills-table{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-
 
 /* ==========================================
    CONTACT SECTION
