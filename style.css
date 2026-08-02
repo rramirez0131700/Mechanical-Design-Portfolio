@@ -82,18 +82,12 @@ p{
 ========================================== */
 
 header{
-
     position:sticky;
     top:0;
     z-index:1000;
-
     background:#0b1f3a;
-
     box-shadow:0 4px 15px rgba(0,0,0,.15);
-
 }
-
-/* Keep everything on ONE row */
 
 header .container{
 
@@ -103,9 +97,9 @@ header .container{
 
     align-items:center;
 
-    min-height:80px;
+    min-height:72px;
 
-    gap:30px;
+    padding:0;
 
 }
 
@@ -131,21 +125,21 @@ header .container{
 
     font-size:28px;
 
+    font-weight:800;
+
     margin:0;
 
-    line-height:1.05;
+    line-height:1.1;
 
 }
 
-.logo p{
+.logo span{
 
-    color:#c5d1df;
+    color:#bfc8d5;
 
     font-size:14px;
 
-    margin-top:4px;
-
-    margin-bottom:0;
+    margin-top:2px;
 
 }
 
@@ -157,13 +151,23 @@ nav{
 
     margin-left:auto;
 
+}
+
+nav ul{
+
     display:flex;
 
-    justify-content:flex-end;
+    list-style:none;
+
+    gap:32px;
 
     align-items:center;
 
-    gap:30px;
+}
+
+nav li{
+
+    list-style:none;
 
 }
 
@@ -171,13 +175,13 @@ nav a{
 
     color:#ffffff;
 
-    font-size:16px;
-
     font-weight:600;
+
+    font-size:16px;
 
     position:relative;
 
-    transition:.25s ease;
+    transition:.3s;
 
 }
 
@@ -1038,81 +1042,51 @@ section{
 
 @media (max-width:768px){
 
-    section{
+header .container{
 
-        padding:65px 0;
+    display:flex;
 
-    }
+    flex-direction:row;
 
-    .container{
+    justify-content:space-between;
 
-        width:95%;
+    align-items:center;
 
-    }
+    min-height:68px;
 
-    /* ---------- HEADER ---------- */
+    gap:15px;
 
-    header .container{
+}
 
-        display:flex;
+.logo h1{
 
-        flex-direction:row;
+    font-size:22px;
 
-        justify-content:space-between;
+}
 
-        align-items:center;
+.logo span{
 
-        gap:12px;
+    font-size:12px;
 
-        min-height:72px;
+}
 
-        padding:8px 0;
+nav ul{
 
-    }
+    gap:14px;
 
-    .logo{
+    flex-wrap:wrap;
 
-        flex-shrink:0;
+    justify-content:flex-end;
 
-    }
+}
 
-    .logo h1{
+nav a{
 
-        font-size:20px;
+    font-size:13px;
 
-    }
+}
 
-    .logo p{
-
-        font-size:11px;
-
-        margin-top:2px;
-
-    }
-
-    nav{
-
-        display:flex;
-
-        justify-content:flex-end;
-
-        align-items:center;
-
-        gap:10px;
-
-        flex-wrap:wrap;
-
-        margin-left:auto;
-
-    }
-
-    nav a{
-
-        font-size:13px;
-
-        white-space:nowrap;
-
-    }
+}
 
     /* ---------- HERO ---------- */
 
