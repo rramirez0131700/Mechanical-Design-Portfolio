@@ -565,15 +565,14 @@ nav a:hover::after{
 }
 
 .skills-column h3{
-
+    font-size:22px;
     margin-bottom:20px;
-
     padding-bottom:15px;
-
     border-bottom:3px solid #58a6ff;
 
-    font-size:22px;
-
+    min-height:70px;
+    display:flex;
+    align-items:flex-end;
 }
 
 .skills-column ul{
