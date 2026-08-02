@@ -393,10 +393,6 @@ nav a:hover{
    SKILLS SECTION
 ========================================== */
 
-/* ==========================================
-   SKILLS SECTION
-========================================== */
-
 #skills{
 
     background:#ffffff;
@@ -405,37 +401,23 @@ nav a:hover{
 
 .skills-grid{
 
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
+    display:block;
     margin-top:40px;
 
 }
 
 .skill-category{
 
-    background:#ffffff;
-    border-radius:16px;
-    padding:30px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:all .3s ease;
-
-}
-
-.skill-category:hover{
-
-    transform:translateY(-8px);
-    box-shadow:0 18px 40px rgba(0,0,0,.15);
+    margin-bottom:45px;
 
 }
 
 .skill-category h3{
 
+    font-size:38px;
     color:#0b1f3a;
-    font-size:24px;
-    margin-bottom:25px;
-    padding-bottom:12px;
-    border-bottom:3px solid #58a6ff;
+    font-weight:700;
+    margin-bottom:18px;
 
 }
 
@@ -443,13 +425,13 @@ nav a:hover{
 
     display:inline-block;
     background:#0b1f3a;
-    color:white;
-    padding:10px 18px;
-    margin:6px;
-    border-radius:50px;
+    color:#fff;
+    padding:10px 20px;
+    margin:6px 6px 0 0;
+    border-radius:999px;
     font-size:15px;
     font-weight:500;
-    transition:all .3s ease;
+    transition:.3s;
 
 }
 
