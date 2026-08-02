@@ -393,37 +393,67 @@ nav a:hover{
    SKILLS SECTION
 ========================================== */
 
+/* ==========================================
+   SKILLS SECTION
+========================================== */
+
 #skills{
 
     background:#ffffff;
 
 }
 
-
 .skills-grid{
 
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
     margin-top:40px;
 
 }
 
+.skill-category{
 
-.skills-grid span{
-
-    background:#0b1f3a;
-    color:white;
-    padding:12px 20px;
-    border-radius:50px;
-    font-size:15px;
-    font-weight:500;
-    transition:.3s;
+    background:#ffffff;
+    border-radius:16px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:all .3s ease;
 
 }
 
+.skill-category:hover{
 
-.skills-grid span:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+}
+
+.skill-category h3{
+
+    color:#0b1f3a;
+    font-size:24px;
+    margin-bottom:25px;
+    padding-bottom:12px;
+    border-bottom:3px solid #58a6ff;
+
+}
+
+.skill-category span{
+
+    display:inline-block;
+    background:#0b1f3a;
+    color:white;
+    padding:10px 18px;
+    margin:6px;
+    border-radius:50px;
+    font-size:15px;
+    font-weight:500;
+    transition:all .3s ease;
+
+}
+
+.skill-category span:hover{
 
     background:#1f5fbf;
     transform:translateY(-3px);
