@@ -660,7 +660,57 @@ a{
 
 }
 
+/* ===========================
+   GEAR CALCULATION LAYOUT
+=========================== */
 
+.formula-layout{
+
+    display:grid;
+
+    grid-template-columns:1.2fr 1fr;
+
+    gap:35px;
+
+    align-items:stretch;
+
+    margin-top:40px;
+
+}
+
+.calculation-image{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.calculation-image img{
+
+    flex:1;
+
+    width:100%;
+
+    object-fit:contain;
+
+    padding:25px;
+
+}
+
+.calculation-image h3{
+
+    height:65px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:0;
+
+}
 /* ===========================
    FORMULA BOX
 =========================== */
@@ -675,10 +725,11 @@ a{
 
     padding:35px;
 
-    margin-bottom:40px;
+    margin:0;
+
+    height:100%;
 
 }
-
 .formula-box h3{
 
     margin-bottom:20px;
@@ -1167,6 +1218,12 @@ footer p{
         grid-template-columns:1fr;
 
     }
+   
+   .formula-layout{
+
+    grid-template-columns:1fr;
+
+}
 
     .hero-info{
 
