@@ -1,0 +1,1213 @@
+/* ==========================================================
+   PLANETARY GEARBOX DRIVE
+   Mechanical Engineering Portfolio
+   Rafael Ramirez
+========================================================== */
+
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:#0d1117;
+
+    color:#f4f4f4;
+
+    line-height:1.7;
+
+}
+
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:280px;
+
+    height:100vh;
+
+    background:#161b22;
+
+    border-right:1px solid #30363d;
+
+    overflow-y:auto;
+
+    z-index:999;
+
+}
+
+.logo{
+
+    padding:40px 25px;
+
+    border-bottom:1px solid #30363d;
+
+}
+
+.logo h2{
+
+    font-size:28px;
+
+    line-height:1.1;
+
+    color:white;
+
+}
+
+.logo p{
+
+    margin-top:10px;
+
+    color:#9ca3af;
+
+}
+
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+.sidebar nav{
+
+    padding:20px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar li{
+
+    margin-bottom:10px;
+
+}
+
+.sidebar a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    color:#d1d5db;
+
+}
+
+.sidebar a:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+    transform:translateX(5px);
+
+}
+
+.sidebar i{
+
+    width:20px;
+
+    text-align:center;
+
+}
+
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+
+.content{
+
+    margin-left:280px;
+
+    padding:60px;
+
+}
+
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    padding:90px 0;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:100px;
+
+    font-size:14px;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+.subtitle{
+
+    max-width:900px;
+
+    color:#cbd5e1;
+
+    font-size:20px;
+
+}
+
+.hero-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-top:50px;
+
+}
+
+.info-card{
+
+    background:#161b22;
+
+    border:1px solid #30363d;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2563eb;
+
+}
+
+.info-card h3{
+
+    margin-bottom:10px;
+
+    color:#60a5fa;
+
+}
+
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+.section{
+
+    margin-top:100px;
+
+}
+
+.section h2{
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+}
+
+.section-description{
+
+    color:#9ca3af;
+
+    margin-bottom:40px;
+
+}
+
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+
+    background:#161b22;
+
+    border:1px solid #30363d;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    margin-bottom:35px;
+
+}
+
+.card p{
+
+    margin-bottom:18px;
+
+}
+
+
+/* ===========================
+   GALLERY
+=========================== */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.gallery-card{
+
+    background:#161b22;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:1px solid #30363d;
+
+    transition:.35s;
+
+}
+
+.gallery-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2563eb;
+
+    box-shadow:0 15px 40px rgba(37,99,235,.20);
+
+}
+
+.gallery-card img{
+
+    width:100%;
+
+    display:block;
+
+    cursor:pointer;
+
+}
+
+.gallery-card h3{
+
+    padding:20px;
+
+    font-size:20px;
+
+}
+
+.gallery-card p{
+
+    padding:0 20px 20px;
+
+    color:#9ca3af;
+
+}
+
+
+/* ===========================
+   THREE COLUMN
+=========================== */
+
+.three-column{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:15px 28px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border-radius:12px;
+
+    margin-top:20px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.button:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-4px);
+
+}
+
+
+/* ===========================
+   DOWNLOAD CARD
+=========================== */
+
+.download-card{
+
+    background:#161b22;
+
+    border:1px solid #30363d;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    margin-top:40px;
+
+}
+
+.download-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.download-card p{
+
+    color:#9ca3af;
+
+}
+
+
+/* ===========================
+   PARAMETER LAYOUT
+=========================== */
+
+.parameter-layout{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:40px;
+
+    margin-top:40px;
+
+}
+
+.parameter-image img{
+
+    width:100%;
+
+    border-radius:15px;
+
+}
+
+.parameter-description{
+
+    background:#161b22;
+
+    border:1px solid #30363d;
+
+    padding:30px;
+
+    border-radius:15px;
+
+}
+
+.parameter-description ul{
+
+    margin-top:20px;
+
+    padding-left:18px;
+
+}
+
+.parameter-description li{
+
+    margin-bottom:12px;
+
+}
+
+
+/* ===========================
+   FORMULA BOX
+=========================== */
+
+.formula-box{
+
+    background:#161b22;
+
+    border:1px solid #30363d;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    margin-bottom:40px;
+
+}
+
+.formula-box h3{
+
+    margin-bottom:20px;
+
+}
+
+.equation{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    text-align:center;
+
+    margin:30px 0;
+
+    color:#60a5fa;
+
+}
+
+.formula-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.formula-table th{
+
+    background:#1f2937;
+
+}
+
+.formula-table th,
+.formula-table td{
+
+    border:1px solid #30363d;
+
+    padding:15px;
+
+    text-align:left;
+
+}
+/* ==========================================================
+   STYLE.CSS - PART 2
+==========================================================*/
+
+
+/* ===========================
+   PDF VIEWER
+=========================== */
+
+.pdf-container{
+
+    width:100%;
+    height:850px;
+
+    margin-top:35px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:1px solid #30363d;
+
+    background:#161b22;
+
+}
+
+.pdf-viewer{
+
+    width:100%;
+    height:100%;
+    border:none;
+
+}
+
+.viewer-note{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    color:#9ca3af;
+
+    font-size:15px;
+
+}
+
+.viewer-note i{
+
+    color:#22c55e;
+
+    margin-right:8px;
+
+}
+
+
+/* ===========================
+   STATUS BOX
+=========================== */
+
+.status-box{
+
+    margin-top:40px;
+
+    padding:22px;
+
+    border-radius:15px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+.status-box.success{
+
+    background:#052e16;
+
+    border:1px solid #22c55e;
+
+    color:#d1fae5;
+
+}
+
+.status-box i{
+
+    margin-right:10px;
+
+}
+
+
+/* ===========================
+   VIDEO GRID
+=========================== */
+
+.video-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+
+    gap:35px;
+
+}
+
+.video-card{
+
+    background:#161b22;
+
+    border:1px solid #30363d;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.video-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2563eb;
+
+    box-shadow:0 20px 45px rgba(37,99,235,.20);
+
+}
+
+.video-card video{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.video-card h3{
+
+    padding:20px;
+
+}
+
+
+/* ===========================
+   PROTOTYPE GRID
+=========================== */
+
+.prototype-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+
+    gap:35px;
+
+}
+
+.prototype-card{
+
+    background:#161b22;
+
+    border:1px solid #30363d;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.prototype-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2563eb;
+
+}
+
+.prototype-card img{
+
+    width:100%;
+
+    display:block;
+
+    cursor:pointer;
+
+}
+
+.prototype-card video{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.prototype-card h3{
+
+    padding:20px;
+
+}
+
+
+/* ===========================
+   MANUFACTURING
+=========================== */
+
+.manufacturing-card{
+
+    background:#161b22;
+
+    border:1px solid #2563eb;
+
+    border-radius:25px;
+
+    padding:50px;
+
+}
+
+.manufacturing-header{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+}
+
+.manufacturing-header i{
+
+    font-size:70px;
+
+    color:#22c55e;
+
+    margin-bottom:20px;
+
+}
+
+.manufacturing-header h2{
+
+    font-size:38px;
+
+}
+
+.manufacturing-checklist{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:40px;
+
+}
+
+.check-item{
+
+    background:#0f172a;
+
+    border:1px solid #30363d;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    font-weight:500;
+
+}
+
+.check-item i{
+
+    color:#22c55e;
+
+    margin-right:12px;
+
+}
+
+.release-banner{
+
+    margin-top:50px;
+
+    text-align:center;
+
+    background:#2563eb;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    font-size:34px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+}
+
+
+/* ===========================
+   LIGHTBOX
+=========================== */
+
+.lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.95);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+.lightbox.active{
+
+    display:flex;
+
+}
+
+.lightbox img{
+
+    max-width:92%;
+
+    max-height:92%;
+
+    border-radius:10px;
+
+    cursor:zoom-in;
+
+    transition:.25s;
+
+}
+
+.close-lightbox{
+
+    position:absolute;
+
+    top:30px;
+
+    right:45px;
+
+    font-size:50px;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    margin-left:280px;
+
+    margin-top:120px;
+
+    padding:60px;
+
+    text-align:center;
+
+    border-top:1px solid #30363d;
+
+    color:#9ca3af;
+
+}
+
+footer h3{
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    margin-bottom:10px;
+
+}
+
+
+/* ===========================
+   FADE ANIMATION
+=========================== */
+
+.section{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s;
+
+}
+
+.section.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* ===========================
+   IMAGE HOVER
+=========================== */
+
+.zoomable{
+
+    transition:.35s;
+
+}
+
+.zoomable:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1200px){
+
+    .parameter-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .hero-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .three-column{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .manufacturing-checklist{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .sidebar{
+
+        position:relative;
+
+        width:100%;
+
+        height:auto;
+
+    }
+
+    .content{
+
+        margin-left:0;
+
+        padding:35px;
+
+    }
+
+    footer{
+
+        margin-left:0;
+
+        padding:35px;
+
+    }
+
+    .hero h1{
+
+        font-size:48px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+
+        padding:40px 0;
+
+    }
+
+    .hero h1{
+
+        font-size:36px;
+
+    }
+
+    .subtitle{
+
+        font-size:18px;
+
+    }
+
+    .section h2{
+
+        font-size:28px;
+
+    }
+
+    .video-grid,
+    .prototype-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    .content{
+
+        padding:20px;
+
+    }
+
+    .card,
+    .download-card,
+    .formula-box{
+
+        padding:20px;
+
+    }
+
+    .release-banner{
+
+        font-size:24px;
+
+    }
+
+}
+
+
+/* ===========================
+   SMOOTH HOVER EFFECTS
+=========================== */
+
+.card,
+.download-card,
+.info-card,
+.gallery-card,
+.prototype-card,
+.video-card,
+.manufacturing-card{
+
+    transition:.35s ease;
+
+}
+
+.card:hover,
+.download-card:hover{
+
+    border-color:#2563eb;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(37,99,235,.12);
+
+}
+
+
+/* ===========================
+   SELECTION COLOR
+=========================== */
+
+::selection{
+
+    background:#2563eb;
+
+    color:white;
+
+}
