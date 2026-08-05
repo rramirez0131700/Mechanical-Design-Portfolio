@@ -596,13 +596,25 @@ a{
 
 .parameter-layout{
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:2fr 1fr;
+    flex-direction:column;
 
-    gap:40px;
+    align-items:center;
+
+    gap:35px;
 
     margin-top:40px;
+
+}
+
+.parameter-image{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
 
 }
 
@@ -610,11 +622,19 @@ a{
 
     width:100%;
 
+    max-width:900px;
+
     border-radius:15px;
+
+    display:block;
 
 }
 
 .parameter-description{
+
+    width:100%;
+
+    max-width:900px;
 
     background:#161b22;
 
