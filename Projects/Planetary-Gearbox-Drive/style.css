@@ -352,15 +352,20 @@ a{
    GALLERY
 =========================== */
 
+
 .gallery{
 
     display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:1fr 1fr 1.6fr;
+
+    grid-template-areas:
+        "front top exploded"
+        "side iso exploded";
 
     gap:30px;
 
-    align-items:start;
+    align-items:stretch;
 
 }
 
@@ -434,6 +439,50 @@ a{
     padding:0 20px 20px;
 
     color:#9ca3af;
+
+}
+
+/* ===========================
+   DESIGN VIEW LAYOUT
+=========================== */
+
+.front-view{
+
+    grid-area:front;
+
+}
+
+.top-view{
+
+    grid-area:top;
+
+}
+
+.side-view{
+
+    grid-area:side;
+
+}
+
+.iso-view{
+
+    grid-area:iso;
+
+}
+
+.exploded-card{
+
+    grid-area:exploded;
+
+    border:2px solid #2563eb;
+
+}
+
+.exploded-card img{
+
+    height:620px;
+
+    object-fit:contain;
 
 }
 
