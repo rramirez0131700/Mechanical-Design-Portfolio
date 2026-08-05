@@ -407,12 +407,13 @@ a{
 
     display:block;
 
-    padding:20px;
+    padding:25px;
+
+    flex:1;
+
 }
 
 .gallery-card h3{
-
-    margin-top:auto;
 
     display:flex;
 
@@ -420,17 +421,25 @@ a{
 
     justify-content:center;
 
-    min-height:70px;
+    height:65px;
 
-    padding:15px;
+    margin:0;
 
-    text-align:center;
+    padding:0 20px;
+
+    background:#1b222c;
+
+    border-bottom:1px solid #30363d;
+
+    color:#ffffff;
 
     font-size:20px;
 
     font-weight:700;
 
-    border-top:1px solid #30363d;
+    letter-spacing:.5px;
+
+    text-align:center;
 
 }
 
