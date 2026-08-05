@@ -1263,14 +1263,22 @@ footer p{
 
 }
 
-.tsa-gallery .gallery-card{
-
+.tsa-gallery .gallery-card h3{
     display:flex;
+    align-items:center;
+    justify-content:center;
+    height:65px;
+    margin:0;
+    padding:12px;
+    background:#1b222c;
+    border-bottom:1px solid #30363d;
+    color:#ffffff;
 
-    flex-direction:column;
-
-    height:100%;
-
+    font-size:15px !important;
+    font-weight:600 !important;
+    line-height:1.4;
+    letter-spacing:0;
+    text-align:center;
 }
 
 .tsa-gallery .gallery-card img{
@@ -1283,21 +1291,6 @@ footer p{
 
     padding:20px;
 
-}
-
-.tsa-title,
-.drawings-gallery .gallery-card h3{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:70px;
-    padding:12px;
-    margin:0;
-    text-align:center;
-    font-size:15px;
-    font-weight:600;
-    line-height:1.35;
-    flex-shrink:0;
 }
 
 /* Responsive */
