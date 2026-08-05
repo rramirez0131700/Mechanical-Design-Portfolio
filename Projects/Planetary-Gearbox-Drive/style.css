@@ -936,8 +936,8 @@ a{
 
 .video-card video{
     width:100%;
-    height:320px;             /* Same video size */
-    object-fit:cover;
+    height:320px;
+    object-fit:contain;      /* Show the entire video */
     display:block;
     background:#000;
 }
