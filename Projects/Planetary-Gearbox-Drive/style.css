@@ -1274,25 +1274,15 @@ footer p{
 }
 
 .tsa-title{
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
-    min-height:90px;       /* Makes every title the same height */
-
-    padding:15px;
-
+    min-height:65px;      /* Same as Manufacturing Drawings */
+    padding:12px;
     text-align:center;
-
-    font-size:16px;
-
+    font-size:15px;       /* Same font size */
     font-weight:600;
-
     line-height:1.4;
-
 }
 
 /* Responsive */
