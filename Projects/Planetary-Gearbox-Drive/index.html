@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Planetary Gearbox Drive | Rafael Ramirez</title>
+
+    <meta name="description"
+        content="Planetary Gearbox Drive Engineering Design Review by Rafael Ramirez. Mechanical Design, DFM, Gear Calculations, DFMEA, Tolerance Analysis, Motion Analysis and Prototype Validation.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- SIDEBAR -->
+    <!-- ========================================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <h2>Planetary<br>Gearbox</h2>
+
+            <p>Engineering Review</p>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#overview"><i class="fa-solid fa-house"></i> Overview</a></li>
+
+                <li><a href="#design"><i class="fa-solid fa-cube"></i> Design Views</a></li>
+
+                <li><a href="#dfmea"><i class="fa-solid fa-triangle-exclamation"></i> DFMEA</a></li>
+
+                <li><a href="#critical"><i class="fa-solid fa-chart-line"></i> Critical Parameters</a></li>
+
+                <li><a href="#gear"><i class="fa-solid fa-gears"></i> Gear Calculation</a></li>
+
+                <li><a href="#fit"><i class="fa-solid fa-circle-notch"></i> Pinion Press Fit</a></li>
+
+                <li><a href="#tsa"><i class="fa-solid fa-ruler-combined"></i> TSA</a></li>
+
+                <li><a href="#drawings"><i class="fa-solid fa-file-lines"></i> 2D Drawings</a></li>
+
+                <li><a href="#motion"><i class="fa-solid fa-video"></i> Motion Analysis</a></li>
+
+                <li><a href="#prototype"><i class="fa-solid fa-print"></i> Prototype</a></li>
+
+                <li><a href="#manufacturing"><i class="fa-solid fa-industry"></i> Manufacturing</a></li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <!-- ========================================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ========================================= -->
+
+    <main class="content">
+
+        <!-- ========================================= -->
+        <!-- HERO -->
+        <!-- ========================================= -->
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <span class="badge">
+                    Product Development Project
+                </span>
+
+                <h1>Planetary Gearbox Drive</h1>
+
+                <p class="subtitle">
+
+                    Compact High-Torque Planetary Gearbox developed for industrial automation
+                    applications focusing on high torque density, optimized gear train design,
+                    Design for Manufacturing (DFM), durability, and mechanical efficiency.
+
+                </p>
+
+                <div class="hero-info">
+
+                    <div class="info-card">
+
+                        <h3>Software</h3>
+
+                        <p>SolidWorks</p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3>Category</h3>
+
+                        <p>Mechanical Design</p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h3>Process</h3>
+
+                        <p>Concept → Manufacturing</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- PROJECT OVERVIEW -->
+        <!-- ========================================= -->
+
+        <section id="overview" class="section">
+
+            <h2>
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                Project Overview
+
+            </h2>
+
+            <div class="card">
+
+                <p>
+
+                    This project focuses on the complete development of a compact
+                    high-torque planetary gearbox intended for industrial automation
+                    applications.
+
+                </p>
+
+                <p>
+
+                    The objective was to replace an existing spur gear transmission
+                    with a more robust planetary gear system capable of transmitting
+                    significantly higher torque while maintaining a compact package.
+
+                </p>
+
+                <p>
+
+                    The engineering workflow included concept generation,
+                    CAD development, engineering calculations,
+                    Lewis bending analysis,
+                    pinion press-fit calculations,
+                    DFMEA,
+                    tolerance stack-up analysis,
+                    motion simulation,
+                    prototype validation,
+                    manufacturing drawings,
+                    and preparation for production release.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- DESIGN VIEWS -->
+        <!-- ========================================= -->
+
+        <section id="design" class="section">
+
+            <h2>
+
+                <i class="fa-solid fa-cube"></i>
+
+                Design Views
+
+            </h2>
+
+            <p class="section-description">
+
+                The following CAD views illustrate the overall design and assembly
+                configuration of the planetary gearbox.
+
+            </p>
+
+            <div class="gallery">
+
+                <!-- FRONT -->
+
+                <div class="gallery-card">
+
+                    <img src="images/front-view.jpeg"
+                        alt="Front View"
+                        class="zoomable">
+
+                    <h3>Front View</h3>
+
+                </div>
+
+                <!-- TOP -->
+
+                <div class="gallery-card">
+
+                    <img src="images/top-view.jpeg"
+                        alt="Top View"
+                        class="zoomable">
+
+                    <h3>Top View</h3>
+
+                </div>
+
+                <!-- SIDE -->
+
+                <div class="gallery-card">
+
+                    <img src="images/side-view.jpeg"
+                        alt="Side View"
+                        class="zoomable">
+
+                    <h3>Side View</h3>
+
+                </div>
+
+                <!-- ISOMETRIC -->
+
+                <div class="gallery-card">
+
+                    <img src="images/iso-view.jpeg"
+                        alt="Isometric View"
+                        class="zoomable">
+
+                    <h3>Isometric View</h3>
+
+                </div>
+
+                <!-- EXPLODED -->
+
+                <div class="gallery-card">
+
+                    <img src="images/exploded-view.jpeg"
+                        alt="Exploded View"
+                        class="zoomable">
+
+                    <h3>Exploded View</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- PART 2 STARTS BELOW -->
+        <!-- DO NOT ADD ANYTHING HERE -->
+        <!-- ========================================= -->
+              <!-- ========================================= -->
+        <!-- DFMEA -->
+        <!-- ========================================= -->
+
+        <section id="dfmea" class="section">
+
+            <h2>
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                Design Failure Mode and Effects Analysis (DFMEA)
+
+            </h2>
+
+            <div class="card">
+
+                <p>
+
+                    A comprehensive DFMEA was conducted during the design phase to
+                    identify potential failure modes, evaluate associated risks,
+                    and establish mitigation measures before prototype validation.
+
+                </p>
+
+                <p>
+
+                    The DFMEA covered gear failure, shaft deformation,
+                    bearing loading, housing integrity,
+                    assembly errors,
+                    manufacturing variation,
+                    and long-term durability considerations.
+
+                </p>
+
+            </div>
+
+            <div class="pdf-container">
+
+                <iframe
+                    src="pdf/PLANETARY GEARBOX DFMEA.pdf#toolbar=0&navpanes=0&scrollbar=1"
+                    class="pdf-viewer">
+
+                </iframe>
+
+            </div>
+
+            <div class="viewer-note">
+
+                <i class="fa-solid fa-lock"></i>
+
+                Engineering document provided for viewing purposes only.
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- GEARBOX CRITICAL PARAMETERS -->
+        <!-- ========================================= -->
+
+        <section id="critical" class="section">
+
+            <h2>
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Gearbox Critical Parameters
+
+            </h2>
+
+            <div class="card">
+
+                <p>
+
+                    Prior to detailed component design,
+                    all critical engineering parameters were established
+                    to ensure that the gearbox satisfies the required
+                    torque capacity, gear ratio, efficiency,
+                    manufacturability,
+                    and service life.
+
+                </p>
+
+            </div>
+
+            <div class="parameter-layout">
+
+                <div class="parameter-image">
+
+                    <img src="images/gearbox-critical-parameter.jpeg"
+                        alt="Gearbox Critical Parameters"
+                        class="zoomable">
+
+                </div>
+
+                <div class="parameter-description">
+
+                    <h3>Engineering Parameters</h3>
+
+                    <ul>
+
+                        <li>Overall Gear Ratio</li>
+
+                        <li>Number of Gear Stages</li>
+
+                        <li>Input Torque</li>
+
+                        <li>Output Torque</li>
+
+                        <li>Motor Speed</li>
+
+                        <li>Efficiency</li>
+
+                        <li>Gear Module</li>
+
+                        <li>Pressure Angle</li>
+
+                        <li>Face Width</li>
+
+                        <li>Material Selection</li>
+
+                        <li>Design Safety Factor</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="download-card">
+
+                <h3>
+
+                    Full Engineering Workbook
+
+                </h3>
+
+                <p>
+
+                    Complete design calculations,
+                    assumptions,
+                    gear sizing,
+                    and engineering parameters.
+
+                </p>
+
+                <a
+                    href="excel/PLANETARY GEARBOX CRITICAL PARAMETERS.xlsx"
+                    target="_blank"
+                    class="button">
+
+                    <i class="fa-solid fa-file-excel"></i>
+
+                    Open Workbook
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- GEAR TOOTH CALCULATION -->
+        <!-- ========================================= -->
+
+        <section id="gear" class="section">
+
+            <h2>
+
+                <i class="fa-solid fa-gears"></i>
+
+                Gear Tooth Calculation
+
+            </h2>
+
+            <div class="card">
+
+                <p>
+
+                    Gear tooth strength was evaluated using the
+                    Lewis Bending Equation to verify that
+                    the selected gears can safely withstand
+                    the transmitted tangential force
+                    with an adequate factor of safety.
+
+                </p>
+
+            </div>
+
+            <div class="formula-box">
+
+                <h3>
+
+                    Lewis Bending Equation
+
+                </h3>
+
+                <div class="equation">
+
+                    σ = Ft / ( b × m × Y )
+
+                </div>
+
+                <table class="formula-table">
+
+                    <tr>
+
+                        <th>Variable</th>
+
+                        <th>Description</th>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>σ</td>
+
+                        <td>Bending Stress</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Ft</td>
+
+                        <td>Tangential Force</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>b</td>
+
+                        <td>Face Width</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>m</td>
+
+                        <td>Gear Module</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Y</td>
+
+                        <td>Lewis Form Factor</td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="gallery-card calculation-image">
+
+                <img
+                    src="images/gear-tooth-calculation.jpeg"
+                    alt="Gear Tooth Calculation"
+                    class="zoomable">
+
+                <h3>
+
+                    Lewis Bending Calculation
+
+                </h3>
+
+            </div>
+
+            <div class="status-box success">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                Gear tooth bending capacity exceeds the calculated design load,
+                providing an acceptable engineering factor of safety.
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- PART 3 STARTS BELOW -->
+        <!-- DO NOT ADD ANYTHING HERE -->
+        <!-- ========================================= -->
+              <!-- ========================================= -->
+        <!-- PINION PRESS FIT -->
+        <!-- ========================================= -->
+
+        <section id="fit" class="section">
+
+            <h2>
+
+                <i class="fa-solid fa-circle-notch"></i>
+
+                Pinion Press Fit Analysis
+
+            </h2>
+
+            <div class="card">
+
+                <p>
+
+                    The press fit between the motor shaft and the pinion gear
+                    was evaluated to ensure sufficient torque transmission
+                    without slippage while maintaining acceptable assembly forces
+                    and preventing excessive stress on both mating components.
+
+                </p>
+
+                <p>
+
+                    Three interference conditions were evaluated to establish
+                    the acceptable manufacturing tolerance window.
+
+                </p>
+
+            </div>
+
+            <div class="gallery three-column">
+
+                <!-- Maximum -->
+
+                <div class="gallery-card">
+
+                    <img src="images/max-interference.jpeg"
+                        alt="Maximum Interference"
+                        class="zoomable">
+
+                    <h3>Maximum Interference</h3>
+
+                    <p>
+                        Maximum allowable interference before excessive
+                        assembly stress occurs.
+                    </p>
+
+                </div>
+
+                <!-- Nominal -->
+
+                <div class="gallery-card">
+
+                    <img src="images/nominal-interference.jpeg"
+                        alt="Nominal Interference"
+                        class="zoomable">
+
+                    <h3>Nominal Interference</h3>
+
+                    <p>
+                        Recommended production interference providing
+                        optimum assembly force and torque transmission.
+                    </p>
+
+                </div>
+
+                <!-- Minimum -->
+
+                <div class="gallery-card">
+
+                    <img src="images/minimum-interference.jpeg"
+                        alt="Minimum Interference"
+                        class="zoomable">
+
+                    <h3>Minimum Interference</h3>
+
+                    <p>
+                        Lowest acceptable interference capable of preventing
+                        rotational slip during operation.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="download-card">
+
+                <h3>
+
+                    Pinion Press Fit Workbook
+
+                </h3>
+
+                <p>
+
+                    Complete engineering calculations including
+                    shaft tolerances,
+                    bore tolerances,
+                    contact pressure,
+                    interference limits,
+                    assembly force
+                    and factor of safety.
+
+                </p>
+
+                <a
+                    href="excel/PLANETARY GEARBOX PINION FIT.xlsx"
+                    target="_blank"
+                    class="button">
+
+                    <i class="fa-solid fa-file-excel"></i>
+
+                    Open Workbook
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- TOLERANCE STACK-UP ANALYSIS -->
+        <!-- ========================================= -->
+
+        <section id="tsa" class="section">
+
+            <h2>
+
+                <i class="fa-solid fa-ruler-combined"></i>
+
+                Tolerance Stack-up Analysis
+
+            </h2>
+
+            <div class="card">
+
+                <p>
+
+                    A detailed tolerance stack-up analysis was conducted
+                    throughout the gearbox assembly to verify that all
+                    functional dimensions remain within specification under
+                    worst-case manufacturing conditions.
+
+                </p>
+
+                <p>
+
+                    Each tolerance study validates a critical interface
+                    affecting gear meshing, bearing alignment,
+                    shaft positioning,
+                    housing clearance,
+                    and overall assembly performance.
+
+                </p>
+
+            </div>
+
+            <div class="gallery">
+
+                <!-- TSA 1 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/tsa1.jpeg"
+                        alt="TSA 1"
+                        class="zoomable">
+
+                    <h3>TSA 1</h3>
+
+                </div>
+
+                <!-- TSA 2 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/tsa2.jpeg"
+                        alt="TSA 2"
+                        class="zoomable">
+
+                    <h3>TSA 2</h3>
+
+                </div>
+
+                <!-- TSA 3 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/tsa3.jpeg"
+                        alt="TSA 3"
+                        class="zoomable">
+
+                    <h3>TSA 3</h3>
+
+                </div>
+
+                <!-- TSA 4 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/tsa4.jpeg"
+                        alt="TSA 4"
+                        class="zoomable">
+
+                    <h3>TSA 4</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- PART 3B STARTS BELOW -->
+        <!-- DO NOT ADD ANYTHING HERE -->
+        <!-- ========================================= -->
+              <!-- ========================================= -->
+        <!-- TOLERANCE STACK-UP ANALYSIS (CONTINUED) -->
+        <!-- ========================================= -->
+
+        <section class="section">
+
+            <div class="gallery">
+
+                <!-- TSA 5 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/tsa5.jpeg"
+                        alt="TSA 5"
+                        class="zoomable">
+
+                    <h3>TSA 5</h3>
+
+                </div>
+
+                <!-- TSA 6 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/tsa6.jpeg"
+                        alt="TSA 6"
+                        class="zoomable">
+
+                    <h3>TSA 6</h3>
+
+                </div>
+
+                <!-- TSA 7 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/tsa7.jpeg"
+                        alt="TSA 7"
+                        class="zoomable">
+
+                    <h3>TSA 7</h3>
+
+                </div>
+
+                <!-- TSA 8 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/tsa8.jpeg"
+                        alt="TSA 8"
+                        class="zoomable">
+
+                    <h3>TSA 8</h3>
+
+                </div>
+
+            </div>
+
+            <div class="status-box success">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                All tolerance stack-up analyses satisfy the functional
+                assembly requirements and maintain adequate manufacturing
+                clearance under worst-case tolerance conditions.
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- MANUFACTURING DRAWINGS -->
+        <!-- ========================================= -->
+
+        <section id="drawings" class="section">
+
+            <h2>
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                Manufacturing Drawings
+
+            </h2>
+
+            <div class="card">
+
+                <p>
+
+                    Production-ready manufacturing drawings were generated
+                    for every custom component of the planetary gearbox.
+
+                </p>
+
+                <p>
+
+                    All drawings include complete dimensions,
+                    geometric tolerances,
+                    material specifications,
+                    surface finish requirements,
+                    and manufacturing notes to support production
+                    and quality inspection.
+
+                </p>
+
+            </div>
+
+            <div class="gallery">
+
+                <!-- 1 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/pinion-gear.jpeg"
+                        alt="Pinion Gear"
+                        class="zoomable">
+
+                    <h3>1. Pinion Gear</h3>
+
+                </div>
+
+                <!-- 2 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/idler-gear.jpeg"
+                        alt="Idler Gear"
+                        class="zoomable">
+
+                    <h3>2. Idler Gear</h3>
+
+                </div>
+
+                <!-- 3 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/main-sun-gear.jpeg"
+                        alt="Main Sun Gear"
+                        class="zoomable">
+
+                    <h3>3. Main Sun Gear</h3>
+
+                </div>
+
+                <!-- 4 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/ring-gear.jpeg"
+                        alt="Ring Gear"
+                        class="zoomable">
+
+                    <h3>4. Ring Gear</h3>
+
+                </div>
+
+                <!-- 5 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/planet-gear.jpeg"
+                        alt="Planet Gear"
+                        class="zoomable">
+
+                    <h3>5. Planet Gear</h3>
+
+                </div>
+
+                <!-- 6 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/idler-shaft.jpeg"
+                        alt="Idler Shaft"
+                        class="zoomable">
+
+                    <h3>6. Idler Shaft</h3>
+
+                </div>
+
+                <!-- 7 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/carrier-stage1.jpeg"
+                        alt="Carrier Stage 1"
+                        class="zoomable">
+
+                    <h3>7. Carrier Stage 1</h3>
+
+                </div>
+
+                <!-- 8 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/carrier-stage2.jpeg"
+                        alt="Carrier Stage 2"
+                        class="zoomable">
+
+                    <h3>8. Carrier Stage 2</h3>
+
+                </div>
+
+                <!-- 9 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/gearbox.jpeg"
+                        alt="Gearbox"
+                        class="zoomable">
+
+                    <h3>9. Gearbox</h3>
+
+                </div>
+
+                <!-- 10 -->
+
+                <div class="gallery-card">
+
+                    <img src="images/gearbox-assembly.jpeg"
+                        alt="Gearbox Assembly"
+                        class="zoomable">
+
+                    <h3>10. Gearbox Assembly</h3>
+
+                </div>
+
+            </div>
+
+            <div class="status-box success">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                All manufacturing drawings have been completed and released
+                for prototype fabrication and production.
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- PART 4 STARTS BELOW -->
+        <!-- DO NOT ADD ANYTHING HERE -->
+        <!-- ========================================= -->
+              <!-- ========================================= -->
+        <!-- MOTION ANALYSIS -->
+        <!-- ========================================= -->
+
+        <section id="motion" class="section">
+
+            <h2>
+
+                <i class="fa-solid fa-video"></i>
+
+                Motion Analysis
+
+            </h2>
+
+            <div class="card">
+
+                <p>
+
+                    Motion simulations were performed to validate the kinematic
+                    behavior of the gearbox prior to prototype manufacturing.
+                    These analyses verified smooth gear engagement, carrier
+                    rotation, and overall mechanism functionality.
+
+                </p>
+
+            </div>
+
+            <div class="video-grid">
+
+                <!-- VIDEO 1 -->
+
+                <div class="video-card">
+
+                    <video controls preload="metadata">
+
+                        <source src="videos/early-motion-analysis.mp4" type="video/mp4">
+
+                    </video>
+
+                    <h3>Early Stage Motion Analysis</h3>
+
+                </div>
+
+                <!-- VIDEO 2 -->
+
+                <div class="video-card">
+
+                    <video controls preload="metadata">
+
+                        <source src="videos/assembly-analysis.mp4" type="video/mp4">
+
+                    </video>
+
+                    <h3>Assembly Motion Analysis</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- PROTOTYPE VALIDATION -->
+        <!-- ========================================= -->
+
+        <section id="prototype" class="section">
+
+            <h2>
+
+                <i class="fa-solid fa-print"></i>
+
+                Prototype Validation
+
+            </h2>
+
+            <div class="card">
+
+                <p>
+
+                    Functional prototypes were manufactured using additive
+                    manufacturing to evaluate assembly, gear meshing,
+                    dimensional accuracy, and overall functionality before
+                    committing to production tooling.
+
+                </p>
+
+            </div>
+
+            <div class="prototype-grid">
+
+                <!-- DEMO 1 -->
+
+                <div class="prototype-card">
+
+                    <img src="images/prototype1.jpeg"
+                        class="zoomable"
+                        alt="Prototype 1">
+
+                    <h3>3D Printed Demo 1</h3>
+
+                    <video controls preload="metadata">
+
+                        <source src="videos/prototype-demo1.mp4"
+                            type="video/mp4">
+
+                    </video>
+
+                </div>
+
+                <!-- DEMO 2 -->
+
+                <div class="prototype-card">
+
+                    <img src="images/prototype2.jpeg"
+                        class="zoomable"
+                        alt="Prototype 2">
+
+                    <h3>3D Printed Demo 2</h3>
+
+                    <video controls preload="metadata">
+
+                        <source src="videos/prototype-demo2.mp4"
+                            type="video/mp4">
+
+                    </video>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- READY FOR MANUFACTURING -->
+        <!-- ========================================= -->
+
+        <section id="manufacturing" class="section">
+
+            <h2>
+
+                <i class="fa-solid fa-industry"></i>
+
+                Ready for Manufacturing
+
+            </h2>
+
+            <div class="manufacturing-card">
+
+                <div class="manufacturing-header">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <h2>
+
+                        Engineering Design Successfully Completed
+
+                    </h2>
+
+                </div>
+
+                <div class="manufacturing-checklist">
+
+                    <div class="check-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Product Architecture Complete
+
+                    </div>
+
+                    <div class="check-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        CAD Design Complete
+
+                    </div>
+
+                    <div class="check-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        DFMEA Approved
+
+                    </div>
+
+                    <div class="check-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Gear Design Verified
+
+                    </div>
+
+                    <div class="check-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Lewis Bending Analysis Complete
+
+                    </div>
+
+                    <div class="check-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Press Fit Analysis Complete
+
+                    </div>
+
+                    <div class="check-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Tolerance Stack-up Analysis Approved
+
+                    </div>
+
+                    <div class="check-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Manufacturing Drawings Released
+
+                    </div>
+
+                    <div class="check-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Motion Analysis Validated
+
+                    </div>
+
+                    <div class="check-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Prototype Successfully Tested
+
+                    </div>
+
+                </div>
+
+                <div class="release-banner">
+
+                    READY FOR MANUFACTURING
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ========================================= -->
+    <!-- IMAGE LIGHTBOX -->
+    <!-- ========================================= -->
+
+    <div id="lightbox" class="lightbox">
+
+        <span class="close-lightbox">&times;</span>
+
+        <img id="lightbox-img" src="" alt="">
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================= -->
+
+    <footer>
+
+        <h3>
+
+            Planetary Gearbox Drive
+
+        </h3>
+
+        <p>
+
+            Mechanical Design Engineering Portfolio
+
+        </p>
+
+        <p>
+
+            Designed and Developed by Rafael Ramirez
+
+        </p>
+
+        <p>
+
+            © 2026 All Rights Reserved
+
+        </p>
+
+    </footer>
+
+    <!-- ========================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
