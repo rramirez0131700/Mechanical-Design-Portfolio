@@ -385,6 +385,8 @@ a{
 
     flex-direction:column;
 
+    height:360px;
+
 }
 
 .gallery-card:hover{
@@ -401,15 +403,11 @@ a{
 
     width:100%;
 
-    height:260px;
+    flex:1;
 
     object-fit:contain;
 
-    display:block;
-
     padding:25px;
-
-    flex:1;
 
 }
 
@@ -489,7 +487,7 @@ a{
 
     box-shadow:0 15px 40px rgba(37,99,235,.30);
 
-    transition:.35s;
+    height:750px;
 
 }
 
@@ -505,15 +503,11 @@ a{
 
     width:100%;
 
-    height:100%;
-
-    min-height:620px;
+    flex:1;
 
     object-fit:contain;
 
     padding:35px;
-
-    flex:1;
 
 }
 
