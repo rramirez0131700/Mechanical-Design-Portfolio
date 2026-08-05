@@ -668,9 +668,9 @@ a{
 
     display:grid;
 
-    grid-template-columns:1.2fr 1fr;
+    grid-template-columns:60% 40%;
 
-    gap:35px;
+    gap:30px;
 
     align-items:stretch;
 
@@ -680,9 +680,43 @@ a{
 
 .calculation-image{
 
+    background:#161b22;
+
+    border:1px solid #30363d;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
     display:flex;
 
     flex-direction:column;
+
+    height:100%;
+
+}
+
+.calculation-image h3{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    height:65px;
+
+    margin:0;
+
+    background:#1b222c;
+
+    border-bottom:1px solid #30363d;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    text-align:center;
 
 }
 
@@ -694,21 +728,7 @@ a{
 
     object-fit:contain;
 
-    padding:25px;
-
-}
-
-.calculation-image h3{
-
-    height:65px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    margin:0;
+    padding:30px;
 
 }
 /* ===========================
@@ -725,11 +745,14 @@ a{
 
     padding:35px;
 
-    margin:0;
-
     height:100%;
 
+    display:flex;
+
+    flex-direction:column;
+
 }
+
 .formula-box h3{
 
     margin-bottom:20px;
