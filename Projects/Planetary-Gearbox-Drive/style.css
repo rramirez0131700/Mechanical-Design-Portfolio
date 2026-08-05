@@ -602,7 +602,7 @@ a{
 
     align-items:center;
 
-    gap:35px;
+    gap:40px;
 
     margin-top:40px;
 
@@ -622,7 +622,7 @@ a{
 
     width:100%;
 
-    max-width:900px;
+    max-width:1000px;
 
     border-radius:15px;
 
@@ -634,15 +634,15 @@ a{
 
     width:100%;
 
-    max-width:900px;
+    max-width:1000px;
 
     background:#161b22;
 
     border:1px solid #30363d;
 
-    padding:30px;
-
     border-radius:15px;
+
+    padding:30px;
 
 }
 
