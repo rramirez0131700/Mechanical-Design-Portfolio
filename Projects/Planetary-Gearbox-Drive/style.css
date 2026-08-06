@@ -1436,7 +1436,7 @@ footer p{
 .pressfit-gallery .gallery-card{
     display:flex;
     flex-direction:column;
-    height:320px;
+    height:auto;
 }
 
 .pressfit-gallery .gallery-card h3{
@@ -1452,34 +1452,51 @@ footer p{
 }
 
 .pressfit-gallery .gallery-card img{
-    flex:1;
     width:100%;
+    aspect-ratio:1/1;
     object-fit:contain;
     padding:15px;
     background:#fff;
     display:block;
 }
 
-/* ===========================
-   TABLET
-=========================== */
+/* ==========================================================
+   PRESS FIT ANALYSIS RESPONSIVE
+========================================================== */
+
+/* ---------- Tablet ---------- */
 
 @media (max-width:992px){
 
     .pressfit-gallery{
         grid-template-columns:repeat(4,1fr);
-        gap:16px;
+        gap:15px;
+    }
+
+    .pressfit-gallery .gallery-card{
+        height:auto;
+    }
+
+    .pressfit-gallery .gallery-card h3{
+        min-height:56px;
+        font-size:13px;
+        padding:8px;
+        line-height:1.35;
     }
 
     .pressfit-gallery .gallery-card img{
-        height:180px;
+        width:100%;
+        aspect-ratio:1/1;
+        height:auto;
+        object-fit:contain;
+        padding:12px;
+        background:#fff;
     }
 
 }
 
-/* ===========================
-   MOBILE
-=========================== */
+
+/* ---------- Mobile ---------- */
 
 @media (max-width:768px){
 
@@ -1488,35 +1505,52 @@ footer p{
         gap:10px;
     }
 
-    .pressfit-gallery .gallery-card img{
-        height:140px;
+    .pressfit-gallery .gallery-card{
+        height:auto;
     }
 
     .pressfit-gallery .gallery-card h3{
+        min-height:50px;
         font-size:11px;
-        min-height:48px;
+        padding:6px;
+    }
+
+    .pressfit-gallery .gallery-card img{
+        width:100%;
+        aspect-ratio:1/1;
+        height:auto;
+        object-fit:contain;
+        padding:10px;
     }
 
 }
 
-/* ===========================
-   SMALL PHONE
-=========================== */
+
+/* ---------- Small Phones ---------- */
 
 @media (max-width:480px){
 
     .pressfit-gallery{
+        grid-template-columns:repeat(4,1fr);
         gap:6px;
     }
 
-    .pressfit-gallery .gallery-card img{
-        height:100px;
+    .pressfit-gallery .gallery-card{
+        height:auto;
     }
 
     .pressfit-gallery .gallery-card h3{
+        min-height:42px;
         font-size:9px;
-        min-height:40px;
         padding:4px;
+    }
+
+    .pressfit-gallery .gallery-card img{
+        width:100%;
+        aspect-ratio:1/1;
+        height:auto;
+        object-fit:contain;
+        padding:8px;
     }
 
 }
@@ -2351,8 +2385,9 @@ footer p{
 
     .tsa-gallery .gallery-card img{
 
-        height:180px;
-
+        height:auto;
+aspect-ratio:1 / 1;
+       
     }
 
 }
@@ -2369,8 +2404,9 @@ footer p{
 
     .tsa-gallery .gallery-card img{
 
-        height:140px;
-
+        height:auto;
+aspect-ratio:1 / 1;
+       
     }
 
     .tsa-gallery .gallery-card h3{
@@ -2395,8 +2431,9 @@ footer p{
 
     .tsa-gallery .gallery-card img{
 
-        height:100px;
-
+        height:auto;
+aspect-ratio:1 / 1;
+       
     }
 
     .tsa-gallery .gallery-card h3{
