@@ -1825,52 +1825,125 @@ footer p{
 
 
 /* ==========================================================
-   PARAMETER / FORMULA
+   CRITICAL GEAR PARAMETERS
+   RESPONSIVE
 ========================================================== */
+
+/* ---------- Tablets ---------- */
 
 @media (max-width:992px){
 
     .parameter-layout{
+        gap:24px;
+        margin-top:30px;
+    }
 
-        gap:25px;
-
+    .parameter-image{
+        width:100%;
     }
 
     .parameter-image img{
-
+        width:100%;
         max-width:100%;
-
+        border-radius:12px;
     }
 
-    .formula-layout{
-
-        grid-template-columns:35% 65%;
-
-        gap:20px;
-
+    .parameter-description{
+        max-width:100%;
+        padding:24px;
     }
 
-    .calculation-image{
+    .parameter-description h3{
+        font-size:24px;
+    }
 
-        min-height:520px;
-
+    .parameter-description p,
+    .parameter-description li{
+        font-size:15px;
+        line-height:1.7;
     }
 
 }
 
+/* ---------- Mobile ---------- */
 
 @media (max-width:768px){
 
-    .formula-layout{
-
-        gap:12px;
-
+    .parameter-layout{
+        display:flex;
+        flex-direction:column;
+        gap:18px;
+        margin-top:24px;
     }
 
-    .calculation-image{
+    .parameter-image{
+        width:100%;
+        overflow:hidden;
+    }
 
-        min-height:430px;
+    .parameter-image img{
+        width:100%;
+        height:auto;
+        max-width:100%;
+        object-fit:contain;
+        border-radius:10px;
+    }
 
+    .parameter-description{
+        width:100%;
+        max-width:100%;
+        padding:20px;
+    }
+
+    .parameter-description h3{
+        font-size:20px;
+        margin-bottom:14px;
+    }
+
+    .parameter-description p{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .parameter-description ul{
+        padding-left:20px;
+        margin-top:15px;
+    }
+
+    .parameter-description li{
+        font-size:14px;
+        margin-bottom:10px;
+        line-height:1.6;
+    }
+
+}
+
+/* ---------- Small Phones ---------- */
+
+@media (max-width:480px){
+
+    .parameter-layout{
+        gap:15px;
+    }
+
+    .parameter-image img{
+        width:100%;
+        border-radius:8px;
+    }
+
+    .parameter-description{
+        padding:16px;
+        border-radius:12px;
+    }
+
+    .parameter-description h3{
+        font-size:18px;
+    }
+
+    .parameter-description p,
+    .parameter-description li{
+        font-size:13px;
+        line-height:1.6;
     }
 
 }
