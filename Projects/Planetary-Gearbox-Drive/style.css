@@ -966,11 +966,17 @@ a{
 
     grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
 
-    gap:35px;
+    gap:30px;
+
+    margin-top:30px;
 
 }
 
 .prototype-card{
+
+    display:flex;
+
+    flex-direction:column;
 
     background:#161b22;
 
@@ -990,15 +996,33 @@ a{
 
     border-color:#2563eb;
 
+    box-shadow:0 20px 45px rgba(37,99,235,.20);
+
 }
 
-.prototype-card img{
+.prototype-card h3{
 
-    width:100%;
+    display:flex;
 
-    display:block;
+    align-items:center;
 
-    cursor:pointer;
+    justify-content:center;
+
+    height:70px;
+
+    margin:0;
+
+    padding:15px;
+
+    background:#1b222c;
+
+    border-bottom:1px solid #30363d;
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:600;
 
 }
 
@@ -1006,16 +1030,15 @@ a{
 
     width:100%;
 
+    height:420px;
+
+    object-fit:contain;
+
+    background:#000;
+
     display:block;
 
 }
-
-.prototype-card h3{
-
-    padding:20px;
-
-}
-
 
 /* ===========================
    MANUFACTURING
