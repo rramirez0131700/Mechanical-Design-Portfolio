@@ -1316,277 +1316,290 @@ footer p{
 
 }
 
-/* Responsive */
+/* ==========================================================
+   RESPONSIVE
+   Preserve Desktop Layout While Scaling for Smaller Screens
+========================================================== */
 
-@media(max-width:1200px){
+@media (max-width:1200px){
 
-    .tsa-gallery{
+    .content{
+        padding:40px;
+    }
 
+    footer{
+        padding:40px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero-info{
         grid-template-columns:repeat(3,1fr);
+        gap:20px;
+    }
 
+    .gallery{
+        gap:20px;
+    }
+
+    .gallery-card{
+        height:320px;
+    }
+
+    .exploded-card{
+        height:670px;
+    }
+
+    .formula-layout{
+        grid-template-columns:35% 65%;
+    }
+
+    .video-card{
+        height:500px;
+    }
+
+    .video-card video{
+        height:260px;
     }
 
 }
 
-@media(max-width:768px){
+@media (max-width:992px){
 
-    .tsa-gallery{
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
+    }
 
+    .content{
+        margin-left:0;
+        padding:30px;
+    }
+
+    footer{
+        margin-left:0;
+        padding:30px;
+    }
+
+    .hero{
+        padding:50px 0;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .section{
+        margin-top:70px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr 1fr 1.5fr;
+        grid-template-areas:
+            "front top exploded"
+            "side iso exploded";
+        gap:15px;
+    }
+
+    .gallery-card{
+        height:260px;
+    }
+
+    .exploded-card{
+        height:540px;
+    }
+
+    .gallery-card img{
+        padding:10px;
+    }
+
+    .gallery-card h3{
+        font-size:15px;
+        height:55px;
+    }
+
+    .video-grid{
         grid-template-columns:repeat(2,1fr);
-
+        gap:20px;
     }
 
-}
-
-@media(max-width:500px){
-
-    .tsa-gallery{
-
-        grid-template-columns:1fr;
-
+    .video-card{
+        height:420px;
     }
 
-}
-
-/* ===========================
-   MANUFACTURING DRAWINGS
-=========================== */
-
-.drawings-gallery{
-
-    display:grid;
-
-    grid-template-columns:repeat(5,1fr);
-
-    gap:24px;
-
-    margin-top:35px;
-
-    align-items:stretch;
-
-}
-
-.drawings-gallery .gallery-card{
-
-    display:flex;
-
-    flex-direction:column;
-
-    height:100%;
-
-}
-
-.drawings-gallery .gallery-card img{
-
-    width:100%;
-
-    height:320px;
-
-    object-fit:contain;
-
-    padding:10px;
-
-    background:#fff;
-
-}
-
-.drawings-gallery .gallery-card h3{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    min-height:65px;
-
-    padding:12px;
-
-    text-align:center;
-
-    font-size:15px;
-
-    font-weight:600;
-
-    line-height:1.4;
-
-}
-@media (max-width:1400px){
-
-    .drawings-gallery{
-
-        grid-template-columns:repeat(4,1fr);
-
+    .video-card video{
+        height:210px;
     }
 
-}
+    .video-card p{
+        font-size:14px;
+        padding:15px;
+    }
 
-@media (max-width:1100px){
+    .prototype-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
 
-    .drawings-gallery{
+    .prototype-card video{
+        height:260px;
+    }
 
-        grid-template-columns:repeat(3,1fr);
+    .formula-layout{
+        grid-template-columns:35% 65%;
+        gap:20px;
+    }
 
+    .calculation-image{
+        min-height:500px;
+    }
+
+    .manufacturing-checklist{
+        grid-template-columns:repeat(2,1fr);
     }
 
 }
 
 @media (max-width:768px){
 
-    .drawings-gallery{
+    html{
+        font-size:90%;
+    }
 
+    .content{
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+
+    .section h2{
+        font-size:28px;
+    }
+
+    .gallery{
+        gap:12px;
+    }
+
+    .gallery-card{
+        height:220px;
+    }
+
+    .exploded-card{
+        height:455px;
+    }
+
+    .gallery-card img{
+        padding:8px;
+    }
+
+    .gallery-card h3{
+        font-size:14px;
+        height:50px;
+    }
+
+    .formula-layout{
+        grid-template-columns:35% 65%;
+        gap:12px;
+    }
+
+    .calculation-image{
+        min-height:420px;
+    }
+
+    .video-grid{
         grid-template-columns:repeat(2,1fr);
+    }
 
+    .video-card{
+        height:350px;
+    }
+
+    .video-card video{
+        height:170px;
+    }
+
+    .video-card h3{
+        font-size:14px;
+        height:55px;
+    }
+
+    .video-card p{
+        font-size:12px;
+    }
+
+    .prototype-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .prototype-card video{
+        height:180px;
+    }
+
+    .pdf-container{
+        height:70vh;
     }
 
 }
 
 @media (max-width:500px){
 
-    .drawings-gallery{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-
-
-/* ===========================
-   RESPONSIVE
-=========================== */
-
-@media(max-width:1200px){
-
-    .parameter-layout{
-
-        grid-template-columns:1fr;
-
-    }
-   
-   .calculation{
-
-    grid-template-columns:1fr;
-
-}
-
-    .hero-info{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .three-column{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .manufacturing-checklist{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-
-@media(max-width:992px){
-
-    .sidebar{
-
-        position:relative;
-
-        width:100%;
-
-        height:auto;
-
+    html{
+        font-size:85%;
     }
 
     .content{
-
-        margin-left:0;
-
-        padding:35px;
-
-    }
-
-    footer{
-
-        margin-left:0;
-
-        padding:35px;
-
+        padding:15px;
     }
 
     .hero h1{
-
-        font-size:48px;
-
-    }
-
-}
-
-@media(max-width:768px){
-
-    .hero{
-
-        padding:40px 0;
-
-    }
-
-    .hero h1{
-
-        font-size:36px;
-
-    }
-
-    .subtitle{
-
-        font-size:18px;
-
-    }
-
-    .section h2{
-
         font-size:28px;
-
-    }
-
-    .video-grid,
-    .prototype-grid{
-
-        grid-template-columns:1fr;
-
     }
 
     .gallery{
-
-        grid-template-columns:1fr;
-
+        gap:8px;
     }
 
-}
-
-@media(max-width:500px){
-
-    .content{
-
-        padding:20px;
-
+    .gallery-card{
+        height:180px;
     }
 
+    .exploded-card{
+        height:375px;
+    }
+
+    .gallery-card h3{
+        font-size:12px;
+    }
+
+    .video-card{
+        height:300px;
+    }
+
+    .video-card video{
+        height:140px;
+    }
+
+    .prototype-card video{
+        height:150px;
+    }
+
+    .formula-box,
     .card,
-    .download-card,
-    .formula-box{
-
-        padding:20px;
-
+    .download-card{
+        padding:15px;
     }
 
     .release-banner{
-
-        font-size:24px;
-
+        font-size:22px;
     }
 
 }
