@@ -663,9 +663,9 @@ a{
 
 .formula-layout{
     display:grid;
-    grid-template-columns:38% 62%;
+    grid-template-columns:40% 60%;
     gap:30px;
-    align-items:stretch;
+    align-items:start;
     margin-top:40px;
 }
 
@@ -740,10 +740,13 @@ a{
     border:1px solid #30363d;
     border-radius:12px;
     text-align:center;
-    font-size:28px;
+    font-size:clamp(18px,2.4vw,28px);
     font-weight:700;
     color:#60a5fa;
-    overflow-wrap:anywhere;
+    white-space:nowrap;
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
 }
 
 /* ==========================================================
@@ -754,6 +757,9 @@ a{
     width:100%;
     border-collapse:collapse;
     margin-top:20px;
+    display:block;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
 }
 
 .formula-table th{
@@ -767,6 +773,11 @@ a{
     padding:14px;
     text-align:left;
     vertical-align:top;
+    white-space:nowrap;
+}
+
+.formula-table td:last-child{
+    white-space:normal;
 }
 
 /* ==========================================================
@@ -789,7 +800,7 @@ a{
     }
 
     .equation{
-        font-size:24px;
+        margin:24px 0;
     }
 
 }
@@ -817,8 +828,10 @@ a{
     }
 
     .calculation-image img{
-        padding:15px;
+        width:100%;
         height:auto;
+        padding:15px;
+        object-fit:contain;
     }
 
     .formula-box{
@@ -831,26 +844,19 @@ a{
 
     .formula-box p{
         font-size:15px;
+        line-height:1.7;
     }
 
     .equation{
-        font-size:20px;
+        font-size:18px;
         margin:20px 0;
         padding:14px;
-    }
-
-    .formula-table{
-        display:block;
-        overflow-x:auto;
-        white-space:nowrap;
-        -webkit-overflow-scrolling:touch;
     }
 
     .formula-table th,
     .formula-table td{
         padding:12px;
         font-size:14px;
-        white-space:normal;
     }
 
 }
@@ -867,6 +873,11 @@ a{
 
     .calculation-image h3{
         font-size:16px;
+        padding:12px;
+    }
+
+    .calculation-image img{
+        padding:12px;
     }
 
     .formula-box{
@@ -882,7 +893,7 @@ a{
     }
 
     .equation{
-        font-size:18px;
+        font-size:16px;
         padding:12px;
     }
 
@@ -893,6 +904,7 @@ a{
     }
 
 }
+
 /* ==========================================================
    STYLE.CSS - PART 2
 ==========================================================*/
@@ -1399,12 +1411,13 @@ footer p{
 .tsa-gallery .gallery-card img{
 
     width:100%;
-
-    height:240px;          /* Same image height */
-
+    height:240px;
     object-fit:contain;
-
     padding:20px;
+
+    background:#fff;
+    display:block;
+    border-radius:0;
 
 }
 
@@ -1592,9 +1605,9 @@ footer p{
 
     background:#fff;
 
-    padding:12px;
+    padding:15px;
 
-    flex:1;
+    display:block;
 
 }
 
