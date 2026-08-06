@@ -1313,9 +1313,75 @@ footer p{
 
 }
 
+/* ===========================
+   MANUFACTURING DRAWINGS
+=========================== */
+
+.drawings-gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,minmax(0,1fr));
+
+    gap:24px;
+
+    margin-top:35px;
+
+    align-items:stretch;
+
+}
+
+.drawings-gallery .gallery-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+    min-width:0;
+
+}
+
+.drawings-gallery .gallery-card img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:contain;
+
+    padding:10px;
+
+    background:#fff;
+
+}
+
+.drawings-gallery .gallery-card h3{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:65px;
+
+    padding:12px;
+
+    text-align:center;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    line-height:1.4;
+
+}
+
 /* ==========================================================
    RESPONSIVE
-   Preserve Desktop Layout While Scaling for Smaller Screens
+   PART 1
 ========================================================== */
 
 @media (max-width:1200px){
@@ -1328,8 +1394,24 @@ footer p{
         padding:40px;
     }
 
+    .hero{
+        padding:70px 0;
+    }
+
     .hero h1{
-        font-size:48px;
+        font-size:52px;
+    }
+
+    .subtitle{
+        font-size:18px;
+    }
+
+    .section{
+        margin-top:80px;
+    }
+
+    .section h2{
+        font-size:32px;
     }
 
     .hero-info{
@@ -1337,267 +1419,806 @@ footer p{
         gap:20px;
     }
 
-    .gallery{
-        gap:20px;
+    .info-card{
+        padding:24px;
     }
 
-    .gallery-card{
-        height:320px;
+    .card,
+    .download-card,
+    .formula-box{
+        padding:28px;
     }
 
-    .exploded-card{
-        height:670px;
-    }
-
-    .formula-layout{
-        grid-template-columns:35% 65%;
-    }
-
-    .video-card{
-        height:500px;
-    }
-
-    .video-card video{
-        height:260px;
+    .button{
+        padding:14px 24px;
     }
 
 }
 
+
+/* ===================================== */
+
 @media (max-width:992px){
 
     .sidebar{
+
         position:relative;
+
         width:100%;
+
         height:auto;
+
     }
 
     .content{
+
         margin-left:0;
-        padding:30px;
+
+        padding:28px;
+
     }
 
     footer{
+
         margin-left:0;
-        padding:30px;
+
+        padding:28px;
+
     }
 
     .hero{
-        padding:50px 0;
+
+        padding:55px 0;
+
     }
 
     .hero h1{
+
         font-size:42px;
+
     }
 
     .section{
+
         margin-top:70px;
+
     }
 
-    .gallery{
-        grid-template-columns:1fr 1fr 1.5fr;
-        grid-template-areas:
-            "front top exploded"
-            "side iso exploded";
+    .section h2{
+
+        font-size:30px;
+
+    }
+
+}
+
+
+/* ===================================== */
+
+@media (max-width:768px){
+
+    html{
+
+        font-size:90%;
+
+    }
+
+    .content{
+
+        padding:20px;
+
+    }
+
+    .hero{
+
+        padding:40px 0;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+    .subtitle{
+
+        font-size:16px;
+
+    }
+
+    .section{
+
+        margin-top:60px;
+
+    }
+
+    .section h2{
+
+        font-size:26px;
+
+    }
+
+    .hero-info{
+
         gap:15px;
+
+    }
+
+    .info-card{
+
+        padding:18px;
+
+    }
+
+}
+
+
+/* ===================================== */
+
+@media (max-width:500px){
+
+    html{
+
+        font-size:85%;
+
+    }
+
+    .content{
+
+        padding:15px;
+
+    }
+
+    .hero h1{
+
+        font-size:28px;
+
+    }
+
+    .subtitle{
+
+        font-size:15px;
+
+    }
+
+    .section{
+
+        margin-top:50px;
+
+    }
+
+    .section h2{
+
+        font-size:24px;
+
+    }
+
+    .card,
+    .download-card,
+    .formula-box{
+
+        padding:18px;
+
+    }
+
+    .button{
+
+        padding:10px 18px;
+
+        font-size:14px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   GALLERY
+========================================================== */
+
+@media (max-width:992px){
+
+    .gallery{
+
+        grid-template-columns:1fr 1fr 1.6fr;
+
+        grid-template-areas:
+
+            "front top exploded"
+
+            "side iso exploded";
+
+        gap:18px;
+
     }
 
     .gallery-card{
-        height:260px;
-    }
 
-    .exploded-card{
-        height:540px;
+        height:280px;
+
     }
 
     .gallery-card img{
-        padding:10px;
+
+        padding:12px;
+
     }
 
     .gallery-card h3{
-        font-size:15px;
+
         height:55px;
+
+        font-size:15px;
+
     }
 
-    .video-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:20px;
+    .exploded-card{
+
+        height:575px;
+
     }
 
-    .video-card{
-        height:420px;
+}
+
+
+@media (max-width:768px){
+
+    .gallery{
+
+        gap:12px;
+
     }
 
-    .video-card video{
-        height:210px;
+    .gallery-card{
+
+        height:220px;
+
     }
 
-    .video-card p{
-        font-size:14px;
-        padding:15px;
+    .gallery-card img{
+
+        padding:8px;
+
     }
 
-    .prototype-grid{
-        grid-template-columns:repeat(2,1fr);
-        gap:20px;
+    .gallery-card h3{
+
+        font-size:13px;
+
+        height:48px;
+
     }
 
-    .prototype-card video{
-        height:260px;
+    .exploded-card{
+
+        height:450px;
+
+    }
+
+}
+
+
+@media (max-width:500px){
+
+    .gallery{
+
+        gap:8px;
+
+    }
+
+    .gallery-card{
+
+        height:180px;
+
+    }
+
+    .gallery-card h3{
+
+        font-size:11px;
+
+        height:42px;
+
+    }
+
+    .exploded-card{
+
+        height:360px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   PARAMETER / FORMULA
+========================================================== */
+
+@media (max-width:992px){
+
+    .parameter-layout{
+
+        gap:25px;
+
+    }
+
+    .parameter-image img{
+
+        max-width:100%;
+
     }
 
     .formula-layout{
+
         grid-template-columns:35% 65%;
+
         gap:20px;
+
     }
 
     .calculation-image{
-        min-height:500px;
+
+        min-height:520px;
+
     }
 
-    .manufacturing-checklist{
+}
+
+
+@media (max-width:768px){
+
+    .formula-layout{
+
+        gap:12px;
+
+    }
+
+    .calculation-image{
+
+        min-height:430px;
+
+    }
+
+}
+/* ==========================================================
+   RESPONSIVE
+   PART 2
+========================================================== */
+
+
+/* ==========================================================
+   VIDEO GRID
+========================================================== */
+
+@media (max-width:992px){
+
+    .video-grid{
+
         grid-template-columns:repeat(2,1fr);
+
+        gap:20px;
+
+    }
+
+    .video-card{
+
+        height:430px;
+
+    }
+
+    .video-card h3{
+
+        height:60px;
+
+        font-size:15px;
+
+    }
+
+    .video-card video{
+
+        height:220px;
+
+    }
+
+    .video-card p{
+
+        padding:15px;
+
+        font-size:14px;
+
     }
 
 }
 
 @media (max-width:768px){
 
-    html{
-        font-size:90%;
-    }
-
-    .content{
-        padding:20px;
-    }
-
-    .hero h1{
-        font-size:34px;
-    }
-
-    .subtitle{
-        font-size:16px;
-    }
-
-    .section h2{
-        font-size:28px;
-    }
-
-    .gallery{
-        gap:12px;
-    }
-
-    .gallery-card{
-        height:220px;
-    }
-
-    .exploded-card{
-        height:455px;
-    }
-
-    .gallery-card img{
-        padding:8px;
-    }
-
-    .gallery-card h3{
-        font-size:14px;
-        height:50px;
-    }
-
-    .formula-layout{
-        grid-template-columns:35% 65%;
-        gap:12px;
-    }
-
-    .calculation-image{
-        min-height:420px;
-    }
-
     .video-grid{
+
         grid-template-columns:repeat(2,1fr);
+
+        gap:12px;
+
     }
 
     .video-card{
-        height:350px;
-    }
 
-    .video-card video{
-        height:170px;
+        height:360px;
+
     }
 
     .video-card h3{
-        font-size:14px;
-        height:55px;
+
+        height:52px;
+
+        font-size:13px;
+
+    }
+
+    .video-card video{
+
+        height:170px;
+
     }
 
     .video-card p{
+
         font-size:12px;
-    }
 
-    .prototype-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
+        padding:12px;
 
-    .prototype-card video{
-        height:180px;
-    }
-
-    .pdf-container{
-        height:70vh;
     }
 
 }
 
 @media (max-width:500px){
 
-    html{
-        font-size:85%;
-    }
+    .video-grid{
 
-    .content{
-        padding:15px;
-    }
+        grid-template-columns:repeat(2,1fr);
 
-    .hero h1{
-        font-size:28px;
-    }
-
-    .gallery{
         gap:8px;
-    }
 
-    .gallery-card{
-        height:180px;
-    }
-
-    .exploded-card{
-        height:375px;
-    }
-
-    .gallery-card h3{
-        font-size:12px;
     }
 
     .video-card{
+
         height:300px;
+
+    }
+
+    .video-card h3{
+
+        height:45px;
+
+        font-size:11px;
+
     }
 
     .video-card video{
-        height:140px;
+
+        height:130px;
+
+    }
+
+    .video-card p{
+
+        font-size:10px;
+
+        padding:10px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   PROTOTYPE GRID
+========================================================== */
+
+@media (max-width:992px){
+
+    .prototype-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:20px;
+
     }
 
     .prototype-card video{
-        height:150px;
+
+        height:260px;
+
     }
 
-    .formula-box,
-    .card,
-    .download-card{
-        padding:15px;
+}
+
+@media (max-width:768px){
+
+    .prototype-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:12px;
+
+    }
+
+    .prototype-card video{
+
+        height:180px;
+
+    }
+
+}
+
+@media (max-width:500px){
+
+    .prototype-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:8px;
+
+    }
+
+    .prototype-card video{
+
+        height:130px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TOLERANCE STACK-UP
+========================================================== */
+
+@media (max-width:992px){
+
+    .tsa-gallery{
+
+        grid-template-columns:repeat(4,1fr);
+
+        gap:15px;
+
+    }
+
+    .tsa-gallery .gallery-card img{
+
+        height:180px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .tsa-gallery{
+
+        grid-template-columns:repeat(4,1fr);
+
+        gap:10px;
+
+    }
+
+    .tsa-gallery .gallery-card img{
+
+        height:140px;
+
+    }
+
+    .tsa-gallery .gallery-card h3{
+
+        font-size:11px !important;
+
+        min-height:48px;
+
+    }
+
+}
+
+@media (max-width:500px){
+
+    .tsa-gallery{
+
+        grid-template-columns:repeat(4,1fr);
+
+        gap:6px;
+
+    }
+
+    .tsa-gallery .gallery-card img{
+
+        height:100px;
+
+    }
+
+    .tsa-gallery .gallery-card h3{
+
+        font-size:9px !important;
+
+        min-height:40px;
+
+        padding:4px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MANUFACTURING DRAWINGS
+========================================================== */
+
+@media (max-width:992px){
+
+    .drawings-gallery{
+
+        grid-template-columns:repeat(5,1fr);
+
+        gap:12px;
+
+    }
+
+    .drawings-gallery .gallery-card img{
+
+        height:220px;
+
+    }
+
+    .drawings-gallery .gallery-card h3{
+
+        font-size:12px;
+
+        min-height:50px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .drawings-gallery{
+
+        grid-template-columns:repeat(5,1fr);
+
+        gap:8px;
+
+    }
+
+    .drawings-gallery .gallery-card img{
+
+        height:170px;
+
+    }
+
+    .drawings-gallery .gallery-card h3{
+
+        font-size:10px;
+
+        min-height:42px;
+
+    }
+
+}
+
+@media (max-width:500px){
+
+    .drawings-gallery{
+
+        grid-template-columns:repeat(5,1fr);
+
+        gap:5px;
+
+    }
+
+    .drawings-gallery .gallery-card img{
+
+        height:120px;
+
+    }
+
+    .drawings-gallery .gallery-card h3{
+
+        font-size:8px;
+
+        min-height:34px;
+
+        padding:3px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   PDF
+========================================================== */
+
+@media (max-width:992px){
+
+    .pdf-container{
+
+        height:75vh;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .pdf-container{
+
+        height:65vh;
+
+    }
+
+}
+
+@media (max-width:500px){
+
+    .pdf-container{
+
+        height:55vh;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MANUFACTURING CHECKLIST
+========================================================== */
+
+@media (max-width:768px){
+
+    .manufacturing-checklist{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:12px;
+
+    }
+
+    .manufacturing-card{
+
+        padding:25px;
+
+    }
+
+    .manufacturing-header h2{
+
+        font-size:28px;
+
     }
 
     .release-banner{
+
         font-size:22px;
+
     }
+
+}
+
+
+/* ==========================================================
+   IMAGE SAFETY
+========================================================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+video{
+
+    max-width:100%;
+
+    display:block;
 
 }
 
